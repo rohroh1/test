@@ -1,0 +1,5633 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 12px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 8px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>AM Dictionary</h2>
+<p><i>Parameter Relations</i><p>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+						<tr class="header">
+							<th style="width:1%;">Source</th>
+							<th style="width:1%;">Target</th>
+							<th style="width:1%;">Type</th>
+							<th style="width:1%;">id</th>
+							<th style="width:1%;">weight</th>
+							<th style="width:1%;">properties</th>
+						</tr>
+
+<tr>
+<td>Absorptivity</td>
+<td>Absorbed_laser_power</td>
+<td>Directed</td>
+<td align="right">0</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>HeatSourcePower</td>
+<td>Absorbed_laser_power</td>
+<td>Directed</td>
+<td align="right">1</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Gravitational_acceleration</td>
+<td>Buoyancy_effect</td>
+<td>Directed</td>
+<td align="right">2</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Length_for_the_buoyancy_force</td>
+<td>Buoyancy_effect</td>
+<td>Directed</td>
+<td align="right">3</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Particle_density</td>
+<td>Buoyancy_effect</td>
+<td>Directed</td>
+<td align="right">4</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Temperature_difference</td>
+<td>Buoyancy_effect</td>
+<td>Directed</td>
+<td align="right">5</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Thermal_expansion_coefficient</td>
+<td>Buoyancy_effect</td>
+<td>Directed</td>
+<td align="right">6</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>SpecificHeat</td>
+<td>Conduction_model</td>
+<td>Directed</td>
+<td align="right">7</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Conduction_model</td>
+<td>Directed</td>
+<td align="right">8</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Heat_flux_vector</td>
+<td>Conduction_model</td>
+<td>Directed</td>
+<td align="right">9</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Particle_density</td>
+<td>Conduction_model</td>
+<td>Directed</td>
+<td align="right">10</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>SpecificHeat</td>
+<td>Conservation_equation_for_energy</td>
+<td>Directed</td>
+<td align="right">11</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ThermalConductivityInPowderBed</td>
+<td>Conservation_equation_for_energy</td>
+<td>Directed</td>
+<td align="right">12</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Distance_along_the_i_direction</td>
+<td>Conservation_equation_for_energy</td>
+<td>Directed</td>
+<td align="right">13</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Particle_density</td>
+<td>Conservation_equation_for_energy</td>
+<td>Directed</td>
+<td align="right">14</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Sensible_heat</td>
+<td>Conservation_equation_for_energy</td>
+<td>Directed</td>
+<td align="right">15</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>Conservation_equation_for_energy</td>
+<td>Directed</td>
+<td align="right">16</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Velocity_component_along_the_i_direction</td>
+<td>Conservation_equation_for_energy</td>
+<td>Directed</td>
+<td align="right">17</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Distance_along_the_i_direction</td>
+<td>Conservation_equation_for_mass</td>
+<td>Directed</td>
+<td align="right">18</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Particle_density</td>
+<td>Conservation_equation_for_mass</td>
+<td>Directed</td>
+<td align="right">19</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Velocity_component_along_the_i_direction</td>
+<td>Conservation_equation_for_mass</td>
+<td>Directed</td>
+<td align="right">20</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Distance_along_the_i_direction</td>
+<td>Conservation_equation_for_momentum</td>
+<td>Directed</td>
+<td align="right">21</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Effective_viscosity</td>
+<td>Conservation_equation_for_momentum</td>
+<td>Directed</td>
+<td align="right">22</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Particle_density</td>
+<td>Conservation_equation_for_momentum</td>
+<td>Directed</td>
+<td align="right">23</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Source_term_for_the_j_component_momentum_equation</td>
+<td>Conservation_equation_for_momentum</td>
+<td>Directed</td>
+<td align="right">24</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>Conservation_equation_for_momentum</td>
+<td>Directed</td>
+<td align="right">25</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Velocity_component_along_the_i_direction</td>
+<td>Conservation_equation_for_momentum</td>
+<td>Directed</td>
+<td align="right">26</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Velocity_component_along_the_j_direction</td>
+<td>Conservation_equation_for_momentum</td>
+<td>Directed</td>
+<td align="right">27</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>SurfaceConvection</td>
+<td>Convection_model</td>
+<td>Directed</td>
+<td align="right">28</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>CoolingRate</td>
+<td>Crystal</td>
+<td>Directed</td>
+<td align="right">29</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ScanningSpeed</td>
+<td>Crystal</td>
+<td>Directed</td>
+<td align="right">30</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Absorbed_laser_power</td>
+<td>Crystal</td>
+<td>Directed</td>
+<td align="right">31</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>BeamWavelength</td>
+<td>Effective_radius_of_laser_beam</td>
+<td>Directed</td>
+<td align="right">32</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Defocused_radius_of_laser_beam</td>
+<td>Effective_radius_of_laser_beam</td>
+<td>Directed</td>
+<td align="right">33</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Buoyancy_effect</td>
+<td>Gravitational_acceleration</td>
+<td>Directed</td>
+<td align="right">34</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Absorbed_laser_power</td>
+<td>Heat_flux_of_constant_density</td>
+<td>Directed</td>
+<td align="right">35</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Length_of_laser_beam</td>
+<td>Heat_flux_of_constant_density</td>
+<td>Directed</td>
+<td align="right">36</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Width_of_laser_beam</td>
+<td>Heat_flux_of_constant_density</td>
+<td>Directed</td>
+<td align="right">37</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Lag_factor</td>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>Directed</td>
+<td align="right">38</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>Directed</td>
+<td align="right">39</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Radius_of_flux_distribution(Ra)</td>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>Directed</td>
+<td align="right">40</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Radius_of_flux_distribution(Rb)</td>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>Directed</td>
+<td align="right">41</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Radius_of_flux_distribution(Rc)</td>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>Directed</td>
+<td align="right">42</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Absorbed_laser_power</td>
+<td>Heat_flux_of_gaussian_density</td>
+<td>Directed</td>
+<td align="right">43</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Effective_radius_of_laser_beam</td>
+<td>Heat_flux_of_gaussian_density</td>
+<td>Directed</td>
+<td align="right">44</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Beam_distribution_parameter(d)</td>
+<td>Heat_flux_of_gaussian_density</td>
+<td>Directed</td>
+<td align="right">45</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Heat_flux_vector</td>
+<td>Directed</td>
+<td align="right">46</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ThermalConductivityInPowderBed</td>
+<td>Heat_flux_vector</td>
+<td>Directed</td>
+<td align="right">47</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Keyhole-mode_laser_melting</td>
+<td>Directed</td>
+<td align="right">48</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Laser_intensity</td>
+<td>Directed</td>
+<td align="right">49</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Buoyancy_effect</td>
+<td>Length_for_the_buoyancy_force</td>
+<td>Directed</td>
+<td align="right">50</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>MarangoniEffect</td>
+<td>MaximumFluidVelocity</td>
+<td>Directed</td>
+<td align="right">51</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>MeltPoolWidth</td>
+<td>MaximumFluidVelocity</td>
+<td>Directed</td>
+<td align="right">52</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Particle_density</td>
+<td>MaximumFluidVelocity</td>
+<td>Directed</td>
+<td align="right">53</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Temperature_difference</td>
+<td>MaximumFluidVelocity</td>
+<td>Directed</td>
+<td align="right">54</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>CoolingRate</td>
+<td>MeltPoolAreal</td>
+<td>Directed</td>
+<td align="right">55</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>LiquidusTemperature</td>
+<td>Melting_with_shrinkage_stage_model</td>
+<td>Directed</td>
+<td align="right">56</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ThermalDiffusivity</td>
+<td>Melting_with_shrinkage_stage_model</td>
+<td>Directed</td>
+<td align="right">57</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>FluidVelocity</td>
+<td>Melting_with_shrinkage_stage_model</td>
+<td>Directed</td>
+<td align="right">58</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>Melting_with_shrinkage_stage_model</td>
+<td>Directed</td>
+<td align="right">59</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ScanningSpeed</td>
+<td>PartDensity</td>
+<td>Directed</td>
+<td align="right">60</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Absorbed_laser_power</td>
+<td>PartDensity</td>
+<td>Directed</td>
+<td align="right">61</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Buoyancy_effect</td>
+<td>Particle_density</td>
+<td>Directed</td>
+<td align="right">62</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Conduction_model</td>
+<td>Particle_density</td>
+<td>Directed</td>
+<td align="right">63</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Conservation_equation_for_energy</td>
+<td>Particle_density</td>
+<td>Directed</td>
+<td align="right">64</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Conservation_equation_for_mass</td>
+<td>Particle_density</td>
+<td>Directed</td>
+<td align="right">65</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Conservation_equation_for_momentum</td>
+<td>Particle_density</td>
+<td>Directed</td>
+<td align="right">66</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Absorbed_laser_power</td>
+<td>PorosityInPart</td>
+<td>Directed</td>
+<td align="right">67</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>InitialDistributionOfTemperature</td>
+<td>Preheating_stage_model</td>
+<td>Directed</td>
+<td align="right">68</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ThermalDiffusivity</td>
+<td>Preheating_stage_model</td>
+<td>Directed</td>
+<td align="right">69</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>Preheating_stage_model</td>
+<td>Directed</td>
+<td align="right">70</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>BedRadiation</td>
+<td>Radiation_model</td>
+<td>Directed</td>
+<td align="right">71</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>LiquidusTemperature</td>
+<td>Resolidification_stage_model</td>
+<td>Directed</td>
+<td align="right">72</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ThermalDiffusivity</td>
+<td>Resolidification_stage_model</td>
+<td>Directed</td>
+<td align="right">73</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>Resolidification_stage_model</td>
+<td>Directed</td>
+<td align="right">74</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Temperature_at_time_t</td>
+<td>Rosenthal_model</td>
+<td>Directed</td>
+<td align="right">75</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Conservation_equation_for_energy</td>
+<td>Sensible_heat</td>
+<td>Directed</td>
+<td align="right">76</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Conservation_equation_for_momentum</td>
+<td>Source_term_for_the_j_component_momentum_equation</td>
+<td>Directed</td>
+<td align="right">77</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_constant_density</td>
+<td>Surface_roughness</td>
+<td>Directed</td>
+<td align="right">78</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>Surface_roughness</td>
+<td>Directed</td>
+<td align="right">79</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_gaussian_density</td>
+<td>Surface_roughness</td>
+<td>Directed</td>
+<td align="right">80</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Rosenthal_model</td>
+<td>Temperature_at_time_t</td>
+<td>Directed</td>
+<td align="right">81</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>BedRadiation</td>
+<td>Temperature_at_time_t</td>
+<td>Directed</td>
+<td align="right">82</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>InitialDistributionOfTemperature</td>
+<td>Temperature_at_time_t</td>
+<td>Directed</td>
+<td align="right">83</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>SpecificHeat</td>
+<td>Temperature_at_time_t</td>
+<td>Directed</td>
+<td align="right">84</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Temperature_at_time_t</td>
+<td>Directed</td>
+<td align="right">85</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ThermalConductivityInPowderBed</td>
+<td>Temperature_at_time_t</td>
+<td>Directed</td>
+<td align="right">86</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Absorptivity</td>
+<td>Temperature_at_time_t</td>
+<td>Directed</td>
+<td align="right">87</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>HeatSourcePower</td>
+<td>Temperature_at_time_t</td>
+<td>Directed</td>
+<td align="right">88</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ScanningSpeed</td>
+<td>Temperature_at_time_t</td>
+<td>Directed</td>
+<td align="right">89</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Particle_density</td>
+<td>Temperature_at_time_t</td>
+<td>Directed</td>
+<td align="right">90</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Buoyancy_effect</td>
+<td>Thermal_expansion_coefficient</td>
+<td>Directed</td>
+<td align="right">91</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Crystal</td>
+<td>Type_of_microstructure_growth</td>
+<td>Directed</td>
+<td align="right">92</td>
+<td>1</td>
+<td>ConsistOf</td>
+</tr>
+<tr>
+<td>Phase_composition_of_Ti_alloy</td>
+<td>a&#39;(a&#39;&#39;)</td>
+<td>Directed</td>
+<td align="right">93</td>
+<td>1</td>
+<td>ConsistOf</td>
+</tr>
+<tr>
+<td>Phase_composition_of_Ti_alloy</td>
+<td>a+b</td>
+<td>Directed</td>
+<td align="right">94</td>
+<td>1</td>
+<td>ConsistOf</td>
+</tr>
+<tr>
+<td>Phase_composition_of_Ti_alloy</td>
+<td>a+a&#39;(a&#39;&#39;)</td>
+<td>Directed</td>
+<td align="right">95</td>
+<td>1</td>
+<td>ConsistOf </td>
+</tr>
+<tr>
+<td>Phase_composition_of_Ti_alloy</td>
+<td>a+a&#39;(a&#39;&#39;)trace+b</td>
+<td>Directed</td>
+<td align="right">96</td>
+<td>1</td>
+<td>ConsistOf </td>
+</tr>
+<tr>
+<td>Crystal</td>
+<td>Columnar</td>
+<td>Directed</td>
+<td align="right">97</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>Crystal</td>
+<td>Equiaxed</td>
+<td>Directed</td>
+<td align="right">98</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>Crystal</td>
+<td>Mixed_with_equiaxed_and_columnar</td>
+<td>Directed</td>
+<td align="right">99</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>Phase_composition</td>
+<td>Phase_composition_of_Ti_alloy</td>
+<td>Directed</td>
+<td align="right">108</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>BoltzmannConstant</td>
+<td>BedRadiation</td>
+<td>Directed</td>
+<td align="right">109</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>BedRadiation</td>
+<td>BoltzmannConstant</td>
+<td>Directed</td>
+<td align="right">110</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Phase_composition</td>
+<td>CoolingRate</td>
+<td>Directed</td>
+<td align="right">111</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Crystal</td>
+<td>CoolingRate</td>
+<td>Directed</td>
+<td align="right">112</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ThermalGradientDistribution</td>
+<td>CoolingRate</td>
+<td>Directed</td>
+<td align="right">113</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Solidification_rate</td>
+<td>CoolingRate</td>
+<td>Directed</td>
+<td align="right">114</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>BedRadiation</td>
+<td>HeatFluxBC</td>
+<td>Directed</td>
+<td align="right">115</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>LatentHeat</td>
+<td>HeatFluxBC</td>
+<td>Directed</td>
+<td align="right">116</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>SurfaceConvection</td>
+<td>HeatFluxBC</td>
+<td>Directed</td>
+<td align="right">117</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Heat_flux_vector</td>
+<td>HeatFluxBC</td>
+<td>Directed</td>
+<td align="right">118</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature_at_time_t</td>
+<td>HeatFluxBC</td>
+<td>Directed</td>
+<td align="right">119</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature_at_time_t</td>
+<td>InitialDistributionOfTemperature</td>
+<td>Directed</td>
+<td align="right">120</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>BedRadiation</td>
+<td>LatentHeat</td>
+<td>Directed</td>
+<td align="right">121</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>SurfaceConvection</td>
+<td>LatentHeat</td>
+<td>Directed</td>
+<td align="right">122</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>SurfaceTension</td>
+<td>MarangoniEffect</td>
+<td>Directed</td>
+<td align="right">123</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>MaximumFluidVelocity</td>
+<td>MarangoniEffect</td>
+<td>Directed</td>
+<td align="right">124</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Conduction_model</td>
+<td>SpecificHeat</td>
+<td>Directed</td>
+<td align="right">125</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Conservation_equation_for_energy</td>
+<td>SpecificHeat</td>
+<td>Directed</td>
+<td align="right">126</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature_at_time_t</td>
+<td>SpecificHeat</td>
+<td>Directed</td>
+<td align="right">127</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>MarangoniEffect</td>
+<td>SurfaceTension</td>
+<td>Directed</td>
+<td align="right">128</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>InterfaceCurvature</td>
+<td>SurfaceTension</td>
+<td>Directed</td>
+<td align="right">129</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>SurfaceTensionCoefficient</td>
+<td>SurfaceTension</td>
+<td>Directed</td>
+<td align="right">130</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Material_density</td>
+<td>SurfaceTension</td>
+<td>Directed</td>
+<td align="right">131</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Temperature_difference</td>
+<td>SurfaceTension</td>
+<td>Directed</td>
+<td align="right">132</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>BedRadiation</td>
+<td>Temperature</td>
+<td>Directed</td>
+<td align="right">133</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>SurfaceConvection</td>
+<td>Temperature</td>
+<td>Directed</td>
+<td align="right">134</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Conduction_model</td>
+<td>Temperature</td>
+<td>Directed</td>
+<td align="right">135</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature_at_time_t</td>
+<td>Temperature</td>
+<td>Directed</td>
+<td align="right">136</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>ThermalConductivityInPowderBed</td>
+<td>Temperature</td>
+<td>Directed</td>
+<td align="right">137</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ThermalDiffusivity</td>
+<td>Temperature</td>
+<td>Directed</td>
+<td align="right">138</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Absorptivity</td>
+<td>Temperature</td>
+<td>Directed</td>
+<td align="right">139</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>BeamSize</td>
+<td>Temperature</td>
+<td>Directed</td>
+<td align="right">140</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ScanningSpeed</td>
+<td>Temperature</td>
+<td>Directed</td>
+<td align="right">141</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>ThermalConductivityInPowderBed</td>
+<td>Directed</td>
+<td align="right">142</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Heat_flux_vector</td>
+<td>ThermalConductivityInPowderBed</td>
+<td>Directed</td>
+<td align="right">143</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature_at_time_t</td>
+<td>ThermalConductivityInPowderBed</td>
+<td>Directed</td>
+<td align="right">144</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Conservation_equation_for_energy</td>
+<td>ThermalConductivityInPowderBed</td>
+<td>Directed</td>
+<td align="right">145</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>CoolingRate</td>
+<td>ThermalGradientDistribution</td>
+<td>Directed</td>
+<td align="right">146</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Absorptivity</td>
+<td>Directed</td>
+<td align="right">147</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature_at_time_t</td>
+<td>Absorptivity</td>
+<td>Directed</td>
+<td align="right">148</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>BeamSize</td>
+<td>Directed</td>
+<td align="right">149</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Laser_intensity</td>
+<td>BeamSize</td>
+<td>Directed</td>
+<td align="right">150</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Absorptivity</td>
+<td>BeamWavelength</td>
+<td>Directed</td>
+<td align="right">151</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>ExtinctionCoefficient</td>
+<td>BeamWavelength</td>
+<td>Directed</td>
+<td align="right">152</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Effective_radius_of_laser_beam</td>
+<td>BeamWavelength</td>
+<td>Directed</td>
+<td align="right">153</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>BedRadiation</td>
+<td>BedEmissivity</td>
+<td>Directed</td>
+<td align="right">154</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>BedRadiation</td>
+<td>ChamberTemperature</td>
+<td>Directed</td>
+<td align="right">155</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>SurfaceConvection</td>
+<td>ChamberTemperature</td>
+<td>Directed</td>
+<td align="right">156</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>SurfaceConvection</td>
+<td>ConvectionCoefficient</td>
+<td>Directed</td>
+<td align="right">157</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_gaussian_density</td>
+<td>GaussianDistribution</td>
+<td>Directed</td>
+<td align="right">158</td>
+<td>1</td>
+<td>sameAs</td>
+</tr>
+<tr>
+<td>SurfaceDistributionOfAbsorbedHeat</td>
+<td>HeatSourcePower</td>
+<td>Directed</td>
+<td align="right">159</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Laser_intensity</td>
+<td>HeatSourcePower</td>
+<td>Directed</td>
+<td align="right">160</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature_at_time_t</td>
+<td>HeatSourcePower</td>
+<td>Directed</td>
+<td align="right">161</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>MaximumFluidVelocity</td>
+<td>MeltPoolWidth</td>
+<td>Directed</td>
+<td align="right">162</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>ScanningSpeed</td>
+<td>Directed</td>
+<td align="right">163</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Crystal</td>
+<td>ScanningSpeed</td>
+<td>Directed</td>
+<td align="right">164</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>ScanningSpeed</td>
+<td>Directed</td>
+<td align="right">165</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature_at_time_t</td>
+<td>ScanningSpeed</td>
+<td>Directed</td>
+<td align="right">166</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Effective_radius_of_laser_beam</td>
+<td>Defocused_radius_of_laser_beam</td>
+<td>Directed</td>
+<td align="right">167</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_gaussian_density</td>
+<td>Effective_radius_of_laser_beam</td>
+<td>Directed</td>
+<td align="right">168</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>ThreeDimensional</td>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>Directed</td>
+<td align="right">169</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>TwoDimensional</td>
+<td>Heat_flux_of_gaussian_density</td>
+<td>Directed</td>
+<td align="right">170</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>Conduction_model</td>
+<td>Heat_flux_vector</td>
+<td>Directed</td>
+<td align="right">171</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>Lag_factor</td>
+<td>Directed</td>
+<td align="right">172</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>SurfaceTension</td>
+<td>Length_for_surface_tension</td>
+<td>Directed</td>
+<td align="right">173</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>SurfaceTension</td>
+<td>Particle_density</td>
+<td>Directed</td>
+<td align="right">174</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>MaximumFluidVelocity</td>
+<td>Particle_density</td>
+<td>Directed</td>
+<td align="right">175</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Temperature_at_time_t</td>
+<td>Particle_density</td>
+<td>Directed</td>
+<td align="right">176</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>CoolingRate</td>
+<td>Solidification_rate</td>
+<td>Directed</td>
+<td align="right">177</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>SurfaceConvection</td>
+<td>Temperature_at_time_t</td>
+<td>Directed</td>
+<td align="right">178</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>SurfaceTension</td>
+<td>Temperature_difference</td>
+<td>Directed</td>
+<td align="right">179</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>MaximumFluidVelocity</td>
+<td>Temperature_difference</td>
+<td>Directed</td>
+<td align="right">180</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_constant_density</td>
+<td>Width_of_laser_beam</td>
+<td>Directed</td>
+<td align="right">181</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_gaussian_density</td>
+<td>Beam_distribution_parameter(d)</td>
+<td>Directed</td>
+<td align="right">182</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>Radius_of_flux_distribution(Ra)</td>
+<td>Directed</td>
+<td align="right">183</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>Radius_of_flux_distribution(Rb)</td>
+<td>Directed</td>
+<td align="right">184</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>Heat_flux_of_double_ellipsoid_density</td>
+<td>Radius_of_flux_distribution(Rc)</td>
+<td>Directed</td>
+<td align="right">185</td>
+<td>1</td>
+<td>influences</td>
+</tr>
+<tr>
+<td>PhysicalReflectionProperty</td>
+<td>AbsorptivityOfParticle</td>
+<td>Directed</td>
+<td align="right">186</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>NeumannBC</td>
+<td>AdiabaticBC</td>
+<td>Directed</td>
+<td align="right">187</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>DensityVariationModel</td>
+<td>AmorphousDensityVariationModel</td>
+<td>Directed</td>
+<td align="right">188</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialSelection</td>
+<td>AmorphousMaterial</td>
+<td>Directed</td>
+<td align="right">189</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Material</td>
+<td>AmorphousMaterial</td>
+<td>Directed</td>
+<td align="right">190</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>AmorphousMaterial</td>
+<td>AmorphousThermoplastic</td>
+<td>Directed</td>
+<td align="right">191</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferNumericalMethod</td>
+<td>ArbitraryLagrangianEulerian</td>
+<td>Directed</td>
+<td align="right">192</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>DensityVariationModel</td>
+<td>ArrheniusTypeDensityVariationModel</td>
+<td>Directed</td>
+<td align="right">193</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>LawOfPhysicsForConsolidation</td>
+<td>AtomicDiffusionInCrystalVacancies</td>
+<td>Directed</td>
+<td align="right">194</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BoundaryHeatFlux</td>
+<td>BedRadiation</td>
+<td>Directed</td>
+<td align="right">195</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>LawOfPhysicsForIrradiationAbsorption</td>
+<td>BeerLambertLaw</td>
+<td>Directed</td>
+<td align="right">196</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>BoltzmannConstant</td>
+<td>Directed</td>
+<td align="right">197</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalBoundaryCondition</td>
+<td>BottomBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">198</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BoundaryHeatFlux</td>
+<td>BottomConduction</td>
+<td>Directed</td>
+<td align="right">199</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalModelPrediction</td>
+<td>BoundaryHeatFlux</td>
+<td>Directed</td>
+<td align="right">200</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialProperty</td>
+<td>BulkMaterialProperty</td>
+<td>Directed</td>
+<td align="right">201</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>SurfaceTensionEffect</td>
+<td>CapillaryEffect</td>
+<td>Directed</td>
+<td align="right">202</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>CrystallineMaterial</td>
+<td>Ceramic</td>
+<td>Directed</td>
+<td align="right">203</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>CharacteristicFrequency</td>
+<td>Directed</td>
+<td align="right">204</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationByMeltingModel</td>
+<td>ConductionModeLaserMeltingModel</td>
+<td>Directed</td>
+<td align="right">205</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelingAssumption</td>
+<td>ConsolidationAssumption</td>
+<td>Directed</td>
+<td align="right">206</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationModel</td>
+<td>ConsolidationBySinteringModel</td>
+<td>Directed</td>
+<td align="right">207</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationAssumption</td>
+<td>ConsolidationInitialCondition</td>
+<td>Directed</td>
+<td align="right">208</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationAssumption</td>
+<td>ConsolidationMechanism</td>
+<td>Directed</td>
+<td align="right">209</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalProperty</td>
+<td>ConsolidationPhysicalProperty</td>
+<td>Directed</td>
+<td align="right">210</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationAssumption</td>
+<td>ConsolidationStateVariable</td>
+<td>Directed</td>
+<td align="right">211</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>CoolingRate</td>
+<td>Directed</td>
+<td align="right">212</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>CrystalLatticeConstant</td>
+<td>Directed</td>
+<td align="right">213</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>DensityVariationModel</td>
+<td>CrystallineDensityVariationModel</td>
+<td>Directed</td>
+<td align="right">214</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialSelection</td>
+<td>CrystallineMaterial</td>
+<td>Directed</td>
+<td align="right">215</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Material</td>
+<td>CrystallineMaterial</td>
+<td>Directed</td>
+<td align="right">216</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>TypeOfReflection</td>
+<td>DiffuseReflection</td>
+<td>Directed</td>
+<td align="right">217</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>DiffusionCoefficient</td>
+<td>Directed</td>
+<td align="right">218</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BottomBoundaryCondition</td>
+<td>DirichletBC</td>
+<td>Directed</td>
+<td align="right">219</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>SideBoundaryCondition</td>
+<td>DirichletBC</td>
+<td>Directed</td>
+<td align="right">220</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalReflectionProperty</td>
+<td>EmissivityOfParticle</td>
+<td>Directed</td>
+<td align="right">221</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>LawOfPhysicsForHeatTransfer</td>
+<td>EnergyConservationLaw</td>
+<td>Directed</td>
+<td align="right">222</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalStateVariable</td>
+<td>Enthalpy</td>
+<td>Directed</td>
+<td align="right">223</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferNumericalMethod</td>
+<td>FiniteElementMethod</td>
+<td>Directed</td>
+<td align="right">224</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferNumericalMethod</td>
+<td>FiniteVolumeMethod</td>
+<td>Directed</td>
+<td align="right">225</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ReferenceFrameAssumption</td>
+<td>FixedFrame</td>
+<td>Directed</td>
+<td align="right">226</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelingAssumption</td>
+<td>FluidMechanicsAssumption</td>
+<td>Directed</td>
+<td align="right">227</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhenomenonCharacteristic</td>
+<td>FluidMechanicsCharacteristic</td>
+<td>Directed</td>
+<td align="right">228</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicsBasedModel</td>
+<td>FluidMechanicsModel</td>
+<td>Directed</td>
+<td align="right">229</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalProperty</td>
+<td>FluidMechanicsPhysicalProperty</td>
+<td>Directed</td>
+<td align="right">230</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>LawOfPhysicsForHeatTransfer</td>
+<td>FouriersLaw</td>
+<td>Directed</td>
+<td align="right">231</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Equation</td>
+<td>FrenkelsModel</td>
+<td>Directed</td>
+<td align="right">232</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Melting</td>
+<td>FullMelting</td>
+<td>Directed</td>
+<td align="right">233</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationBySinteringCharacteristic</td>
+<td>FullySinteredDensity</td>
+<td>Directed</td>
+<td align="right">234</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhaseTransformationCharacteristic</td>
+<td>GlassTransitionTemperature</td>
+<td>Directed</td>
+<td align="right">235</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>CrystallineMaterial</td>
+<td>HardMetal</td>
+<td>Directed</td>
+<td align="right">236</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>NeumannBC</td>
+<td>HeatFluxBC</td>
+<td>Directed</td>
+<td align="right">237</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>NumericalMethod</td>
+<td>HeatTransferNumericalMethod</td>
+<td>Directed</td>
+<td align="right">238</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalPhysicalProperty</td>
+<td>HeatTransferProperty</td>
+<td>Directed</td>
+<td align="right">239</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>IdealGasConstant</td>
+<td>Directed</td>
+<td align="right">240</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>InclusionOfAbsorbedHeat</td>
+<td>Directed</td>
+<td align="right">241</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>InclusionOfAbsorbedHeat</td>
+<td>InclusionOfHeatAsBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">242</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>InclusionOfAbsorbedHeat</td>
+<td>InclusionOfHeatAsSourceTerm</td>
+<td>Directed</td>
+<td align="right">243</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalReflectionProperty</td>
+<td>InertGasProperty</td>
+<td>Directed</td>
+<td align="right">244</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalInitialCondition</td>
+<td>InitialDistributionOfEnthalpy</td>
+<td>Directed</td>
+<td align="right">245</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalInitialCondition</td>
+<td>InitialDistributionOfTemperature</td>
+<td>Directed</td>
+<td align="right">246</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationInitialCondition</td>
+<td>InitialVolume</td>
+<td>Directed</td>
+<td align="right">247</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>InterfaceCurvature</td>
+<td>Directed</td>
+<td align="right">248</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>NumericalMethod</td>
+<td>IrradiationAbsorptionNumericalMethod</td>
+<td>Directed</td>
+<td align="right">249</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalPhysicalProperty</td>
+<td>IrradiationAbsorptionProperty</td>
+<td>Directed</td>
+<td align="right">250</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>DirichletBC</td>
+<td>IsoThermalBC</td>
+<td>Directed</td>
+<td align="right">251</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferProperty</td>
+<td>LatentHeat</td>
+<td>Directed</td>
+<td align="right">252</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalReflectionProperty</td>
+<td>LatentHeat</td>
+<td>Directed</td>
+<td align="right">253</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>FusionCharacteristic</td>
+<td>LatentHeat</td>
+<td>Directed</td>
+<td align="right">254</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationAssumption</td>
+<td>LawOfPhysicsForConsolidation</td>
+<td>Directed</td>
+<td align="right">255</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>LawOfPhysicsForHeatTransfer</td>
+<td>Directed</td>
+<td align="right">256</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionModelingAssumption</td>
+<td>LawOfPhysicsForIrradiationAbsorption</td>
+<td>Directed</td>
+<td align="right">257</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialProperty</td>
+<td>LiquidusTemperature</td>
+<td>Directed</td>
+<td align="right">258</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>LocalSolidificationTime</td>
+<td>Directed</td>
+<td align="right">259</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationBySinteringCharacteristic</td>
+<td>LoosePowderDensity</td>
+<td>Directed</td>
+<td align="right">260</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>SurfaceTensionEffect</td>
+<td>MarangoniEffect</td>
+<td>Directed</td>
+<td align="right">261</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationAssumption</td>
+<td>MaterialSelection</td>
+<td>Directed</td>
+<td align="right">262</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PowderBedFusionProcessParameter</td>
+<td>MaterialVendorSpecification</td>
+<td>Directed</td>
+<td align="right">263</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationMechanism</td>
+<td>Melting</td>
+<td>Directed</td>
+<td align="right">264</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>RadiationTransferProperty</td>
+<td>MeltingPoint</td>
+<td>Directed</td>
+<td align="right">265</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>MeltingTemperature</td>
+<td>Directed</td>
+<td align="right">266</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferProperty</td>
+<td>MeltingTemperature</td>
+<td>Directed</td>
+<td align="right">267</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>RadiationTransferProperty</td>
+<td>MeltingTemperature</td>
+<td>Directed</td>
+<td align="right">268</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>FusionCharacteristic</td>
+<td>MeltingTemperature</td>
+<td>Directed</td>
+<td align="right">269</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialProperty</td>
+<td>MeltingTemperature</td>
+<td>Directed</td>
+<td align="right">270</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>CrystallineMaterial</td>
+<td>MetalAlloy</td>
+<td>Directed</td>
+<td align="right">271</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>CrystallineMaterial</td>
+<td>MetallicCrystalline</td>
+<td>Directed</td>
+<td align="right">272</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelingAssumption</td>
+<td>MicrostructuralAssumption</td>
+<td>Directed</td>
+<td align="right">273</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhenomenonCharacteristic</td>
+<td>MicrostructuralCharacteristic</td>
+<td>Directed</td>
+<td align="right">274</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicsBasedModel</td>
+<td>MicrostructuralModel</td>
+<td>Directed</td>
+<td align="right">275</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Phenomenon</td>
+<td>MicrostructuralPhenomenon</td>
+<td>Directed</td>
+<td align="right">276</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalProperty</td>
+<td>MicrostructuralPhysicalProperty</td>
+<td>Directed</td>
+<td align="right">277</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>TopBoundaryCondition</td>
+<td>MixedBC</td>
+<td>Directed</td>
+<td align="right">278</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelElement</td>
+<td>ModelInput</td>
+<td>Directed</td>
+<td align="right">279</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelElement</td>
+<td>ModelVariable</td>
+<td>Directed</td>
+<td align="right">280</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ReferenceFrameAssumption</td>
+<td>MovingFrame</td>
+<td>Directed</td>
+<td align="right">281</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BottomBoundaryCondition</td>
+<td>NeumannBC</td>
+<td>Directed</td>
+<td align="right">282</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>SideBoundaryCondition</td>
+<td>NeumannBC</td>
+<td>Directed</td>
+<td align="right">283</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>LawOfPhysicsForConsolidation</td>
+<td>NewtonianFlow</td>
+<td>Directed</td>
+<td align="right">284</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>LawOfPhysicsForConsolidation</td>
+<td>NonNewtonianFlow</td>
+<td>Directed</td>
+<td align="right">285</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>NumberOfPoresPerUnitVolume</td>
+<td>Directed</td>
+<td align="right">286</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Melting</td>
+<td>PartialMelting</td>
+<td>Directed</td>
+<td align="right">287</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>PhaseTransformationAssumption</td>
+<td>Directed</td>
+<td align="right">288</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelElement</td>
+<td>PhysicalProperty</td>
+<td>Directed</td>
+<td align="right">289</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>LawOfPhysicsForIrradiationAbsorption</td>
+<td>PhysicalReflectionLaw</td>
+<td>Directed</td>
+<td align="right">290</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionProperty</td>
+<td>PhysicalReflectionProperty</td>
+<td>Directed</td>
+<td align="right">291</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationStateVariable</td>
+<td>Porosity</td>
+<td>Directed</td>
+<td align="right">292</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalReflectionProperty</td>
+<td>PowderBedDimension</td>
+<td>Directed</td>
+<td align="right">293</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationStateVariable</td>
+<td>PowderDensity</td>
+<td>Directed</td>
+<td align="right">294</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferProperty</td>
+<td>PowderDensity</td>
+<td>Directed</td>
+<td align="right">295</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialProperty</td>
+<td>PowderMaterialProperty</td>
+<td>Directed</td>
+<td align="right">296</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>LawOfPhysicsForIrradiationAbsorption</td>
+<td>RadiationTransferLaw</td>
+<td>Directed</td>
+<td align="right">297</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionProperty</td>
+<td>RadiationTransferProperty</td>
+<td>Directed</td>
+<td align="right">298</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>ReferenceFrameAssumption</td>
+<td>Directed</td>
+<td align="right">299</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalReflectionProperty</td>
+<td>ReflectivityOfParticle</td>
+<td>Directed</td>
+<td align="right">300</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>FouriersModel</td>
+<td>RosenthalTypeHeatTransferModel</td>
+<td>Directed</td>
+<td align="right">301</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>AmorphousMaterial</td>
+<td>SemiCrystallineThermoplastic</td>
+<td>Directed</td>
+<td align="right">302</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>DirichletBC</td>
+<td>SemiInfiniteBC</td>
+<td>Directed</td>
+<td align="right">303</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalBoundaryCondition</td>
+<td>SideBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">304</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BoundaryHeatFlux</td>
+<td>SidewayConduction</td>
+<td>Directed</td>
+<td align="right">305</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>SinteringActivationEnergy</td>
+<td>Directed</td>
+<td align="right">306</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelInput</td>
+<td>SinteringActivationEnergy</td>
+<td>Directed</td>
+<td align="right">307</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationBySinteringCharacteristic</td>
+<td>SinteringActivationEnergy</td>
+<td>Directed</td>
+<td align="right">308</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>SinteringRate</td>
+<td>Directed</td>
+<td align="right">309</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelingAssumption</td>
+<td>SolidMechanicsAssumption</td>
+<td>Directed</td>
+<td align="right">310</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhenomenonCharacteristic</td>
+<td>SolidMechanicsCharacteristic</td>
+<td>Directed</td>
+<td align="right">311</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicsBasedModel</td>
+<td>SolidMechanicsModel</td>
+<td>Directed</td>
+<td align="right">312</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalProperty</td>
+<td>SolidMechanicsPhysicalProperty</td>
+<td>Directed</td>
+<td align="right">313</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationMechanism</td>
+<td>SolidStateSintering</td>
+<td>Directed</td>
+<td align="right">314</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialProperty</td>
+<td>SolidusTemperature</td>
+<td>Directed</td>
+<td align="right">315</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BulkMaterialProperty</td>
+<td>SpecificHeat</td>
+<td>Directed</td>
+<td align="right">316</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferProperty</td>
+<td>SpecificHeat</td>
+<td>Directed</td>
+<td align="right">317</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>TypeOfReflection</td>
+<td>SpecularReflection</td>
+<td>Directed</td>
+<td align="right">318</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>RadiationTransferProperty</td>
+<td>SpecularReflectivity</td>
+<td>Directed</td>
+<td align="right">319</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Phenomenon</td>
+<td>StructuralPhenomenon</td>
+<td>Directed</td>
+<td align="right">320</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>SubstrateModelingAssumption</td>
+<td>Directed</td>
+<td align="right">321</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>SubstrateTemperature</td>
+<td>Directed</td>
+<td align="right">322</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BoundaryHeatFlux</td>
+<td>SurfaceConvection</td>
+<td>Directed</td>
+<td align="right">323</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>SurfaceTension</td>
+<td>Directed</td>
+<td align="right">324</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelInput</td>
+<td>SurfaceTensionCoefficient</td>
+<td>Directed</td>
+<td align="right">325</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>Temperature</td>
+<td>Directed</td>
+<td align="right">326</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalStateVariable</td>
+<td>Temperature</td>
+<td>Directed</td>
+<td align="right">327</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>LawOfPhysicsForConsolidation</td>
+<td>TemperatureActivatedReaction</td>
+<td>Directed</td>
+<td align="right">328</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>LawOfPhysicsForConsolidation</td>
+<td>TemperatureDependentDensity</td>
+<td>Directed</td>
+<td align="right">329</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationByMeltingCharacteristic</td>
+<td>TemperatureDependentDensity</td>
+<td>Directed</td>
+<td align="right">330</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationModelPrediction</td>
+<td>TemperatureDependentPorosity</td>
+<td>Directed</td>
+<td align="right">331</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationModelPrediction</td>
+<td>TemperatureDependentPowderDensity</td>
+<td>Directed</td>
+<td align="right">332</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelingAssumption</td>
+<td>ThermalAssumption</td>
+<td>Directed</td>
+<td align="right">333</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>ThermalBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">334</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferProperty</td>
+<td>ThermalConductivityInPowderBed</td>
+<td>Directed</td>
+<td align="right">335</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>ThermalConductivityInPowderBed</td>
+<td>Directed</td>
+<td align="right">336</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>RadiationTransferProperty</td>
+<td>ThermalConductivityInPowderBed</td>
+<td>Directed</td>
+<td align="right">337</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>TransportPropertyAssumption</td>
+<td>ThermalConductivityInPowderBed</td>
+<td>Directed</td>
+<td align="right">338</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatDissipationCharacteristic</td>
+<td>ThermalConductivityInPowderBed</td>
+<td>Directed</td>
+<td align="right">339</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BulkMaterialProperty</td>
+<td>ThermalConductivityOfTheBulkMaterial</td>
+<td>Directed</td>
+<td align="right">340</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferProperty</td>
+<td>ThermalDiffusivity</td>
+<td>Directed</td>
+<td align="right">341</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>TransportPropertyAssumption</td>
+<td>ThermalDiffusivity</td>
+<td>Directed</td>
+<td align="right">342</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatDissipationCharacteristic</td>
+<td>ThermalDiffusivity</td>
+<td>Directed</td>
+<td align="right">343</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialProperty</td>
+<td>ThermalDiffusivity</td>
+<td>Directed</td>
+<td align="right">344</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>ThermalGradientDistribution</td>
+<td>Directed</td>
+<td align="right">345</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>ThermalInitialCondition</td>
+<td>Directed</td>
+<td align="right">346</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicsBasedModel</td>
+<td>ThermalModel</td>
+<td>Directed</td>
+<td align="right">347</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Prediction</td>
+<td>ThermalModelPrediction</td>
+<td>Directed</td>
+<td align="right">348</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Phenomenon</td>
+<td>ThermalPhenomenon</td>
+<td>Directed</td>
+<td align="right">349</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalProperty</td>
+<td>ThermalPhysicalProperty</td>
+<td>Directed</td>
+<td align="right">350</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>ThermalStateVariable</td>
+<td>Directed</td>
+<td align="right">351</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalBoundaryCondition</td>
+<td>TopBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">352</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>FouriersModel</td>
+<td>TransportEquationForEnthalpy</td>
+<td>Directed</td>
+<td align="right">353</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>FouriersModel</td>
+<td>TransportEquationForTemperature</td>
+<td>Directed</td>
+<td align="right">354</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>TransportPropertyAssumption</td>
+<td>Directed</td>
+<td align="right">355</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>TuningParameter</td>
+<td>Directed</td>
+<td align="right">356</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalReflectionProperty</td>
+<td>TypeOfReflection</td>
+<td>Directed</td>
+<td align="right">357</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialProperty</td>
+<td>VaporizationTemperature</td>
+<td>Directed</td>
+<td align="right">358</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>VaporizationCharacteristic</td>
+<td>VaporizationTemperature</td>
+<td>Directed</td>
+<td align="right">359</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>Viscosity</td>
+<td>Directed</td>
+<td align="right">360</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>Viscosity</td>
+<td>Directed</td>
+<td align="right">361</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationStateVariable</td>
+<td>Volume</td>
+<td>Directed</td>
+<td align="right">362</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationModelPrediction</td>
+<td>VolumeDistribution</td>
+<td>Directed</td>
+<td align="right">363</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionCharacteristic</td>
+<td>Absorptivity</td>
+<td>Directed</td>
+<td align="right">364</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>RadiativeProperty</td>
+<td>Absorptivity</td>
+<td>Directed</td>
+<td align="right">365</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Physical</td>
+<td>AdditiveManufacturingProcess</td>
+<td>Directed</td>
+<td align="right">366</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MeltingModelingAssumption</td>
+<td>AtConstantMeltingTemperature</td>
+<td>Directed</td>
+<td align="right">367</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>OpticalParameter</td>
+<td>BeamSize</td>
+<td>Directed</td>
+<td align="right">368</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>OpticalParameter</td>
+<td>BeamType</td>
+<td>Directed</td>
+<td align="right">369</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>OpticalParameter</td>
+<td>BeamWavelength</td>
+<td>Directed</td>
+<td align="right">370</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>RadiativeProperty</td>
+<td>BedEmissivity</td>
+<td>Directed</td>
+<td align="right">371</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Equation</td>
+<td>BeerLambertModel</td>
+<td>Directed</td>
+<td align="right">372</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>EquipmentParameter</td>
+<td>BuildChamberParameter</td>
+<td>Directed</td>
+<td align="right">373</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BuildChamberParameter</td>
+<td>ChamberTemperature</td>
+<td>Directed</td>
+<td align="right">374</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Abstract</td>
+<td>Characteristic</td>
+<td>Directed</td>
+<td align="right">375</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialVendorSpecification</td>
+<td>ChemicalComposition</td>
+<td>Directed</td>
+<td align="right">376</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Phenomenon</td>
+<td>Consolidation</td>
+<td>Directed</td>
+<td align="right">377</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Consolidation</td>
+<td>ConsolidationByMelting</td>
+<td>Directed</td>
+<td align="right">378</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationCharacteristic</td>
+<td>ConsolidationByMeltingCharacteristic</td>
+<td>Directed</td>
+<td align="right">379</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Consolidation</td>
+<td>ConsolidationBySintering</td>
+<td>Directed</td>
+<td align="right">380</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationCharacteristic</td>
+<td>ConsolidationBySinteringCharacteristic</td>
+<td>Directed</td>
+<td align="right">381</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhenomenonCharacteristic</td>
+<td>ConsolidationCharacteristic</td>
+<td>Directed</td>
+<td align="right">382</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicsBasedModel</td>
+<td>ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">383</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Prediction</td>
+<td>ConsolidationModelPrediction</td>
+<td>Directed</td>
+<td align="right">384</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialDistribution</td>
+<td>Continuum</td>
+<td>Directed</td>
+<td align="right">385</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelInput</td>
+<td>ConvectionCoefficient</td>
+<td>Directed</td>
+<td align="right">386</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>SurfaceDistributionOfHeat</td>
+<td>CylindricalDistribution</td>
+<td>Directed</td>
+<td align="right">387</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Microstructure</td>
+<td>DendriteGrainOrientation</td>
+<td>Directed</td>
+<td align="right">388</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MicrostructuralModelPrediction</td>
+<td>DendriteOrientation</td>
+<td>Directed</td>
+<td align="right">389</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MicrostructuralModelPrediction</td>
+<td>DendriticGrainSizeDistribution</td>
+<td>Directed</td>
+<td align="right">390</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationModelPrediction</td>
+<td>DensityDistribution</td>
+<td>Directed</td>
+<td align="right">391</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BulkMaterialProperty</td>
+<td>DensityOfBulkMaterial</td>
+<td>Directed</td>
+<td align="right">392</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Equation</td>
+<td>DensityVariationModel</td>
+<td>Directed</td>
+<td align="right">393</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Microstructure</td>
+<td>DentriticGrainSize</td>
+<td>Directed</td>
+<td align="right">394</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>StatisticalNatureOfIrradiationDistribution</td>
+<td>DeterministicIrradiation</td>
+<td>Directed</td>
+<td align="right">395</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>DimensionalityOfAbsorbedHeat</td>
+<td>Directed</td>
+<td align="right">396</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionModelingAssumption</td>
+<td>DimensionalityOfAbsorbedHeat</td>
+<td>Directed</td>
+<td align="right">397</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>DimensionalityOfPhysicalSystem</td>
+<td>Directed</td>
+<td align="right">398</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionModelingAssumption</td>
+<td>DimensionalityOfPhysicalSystem</td>
+<td>Directed</td>
+<td align="right">399</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PowderBedFusionProcess</td>
+<td>DirectMetalLaserMelting</td>
+<td>Directed</td>
+<td align="right">400</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PowderBedFusionProcess</td>
+<td>DirectMetalLaserSintering</td>
+<td>Directed</td>
+<td align="right">401</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferNumericalMethod</td>
+<td>DiscreteElementMethod</td>
+<td>Directed</td>
+<td align="right">402</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionNumericalMethod</td>
+<td>DiscreteElementMethod</td>
+<td>Directed</td>
+<td align="right">403</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BulkMaterialProperty</td>
+<td>ElasticModulus</td>
+<td>Directed</td>
+<td align="right">404</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PowderBedFusionProcess</td>
+<td>ElectronBeamMelting</td>
+<td>Directed</td>
+<td align="right">405</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Model</td>
+<td>EmpiricalModel</td>
+<td>Directed</td>
+<td align="right">406</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelElement</td>
+<td>Equation</td>
+<td>Directed</td>
+<td align="right">407</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PowderBedFusionProcessParameter</td>
+<td>EquipmentParameter</td>
+<td>Directed</td>
+<td align="right">408</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhaseTransformationAssumption</td>
+<td>EvaporationModelingAssumption</td>
+<td>Directed</td>
+<td align="right">409</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionCharacteristic</td>
+<td>ExtinctionCoefficient</td>
+<td>Directed</td>
+<td align="right">410</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Phenomenon</td>
+<td>FluidMechanics</td>
+<td>Directed</td>
+<td align="right">411</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Prediction</td>
+<td>FluidMechanicsModelPrediction</td>
+<td>Directed</td>
+<td align="right">412</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferProperty</td>
+<td>FluidVelocity</td>
+<td>Directed</td>
+<td align="right">413</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>FluidMechanicsModelPrediction</td>
+<td>FluidVelocity</td>
+<td>Directed</td>
+<td align="right">414</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Equation</td>
+<td>FouriersModel</td>
+<td>Directed</td>
+<td align="right">415</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhaseTransformation</td>
+<td>Fusion</td>
+<td>Directed</td>
+<td align="right">416</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhaseTransformationCharacteristic</td>
+<td>FusionCharacteristic</td>
+<td>Directed</td>
+<td align="right">417</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BuildChamberParameter</td>
+<td>GasComposition</td>
+<td>Directed</td>
+<td align="right">418</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BuildChamberParameter</td>
+<td>GasPressure</td>
+<td>Directed</td>
+<td align="right">419</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>SurfaceDistributionOfHeat</td>
+<td>GaussianDistribution</td>
+<td>Directed</td>
+<td align="right">420</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PowderBedFusionProcessParameter</td>
+<td>HatchingDistance</td>
+<td>Directed</td>
+<td align="right">421</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransfer</td>
+<td>HeatDissipation</td>
+<td>Directed</td>
+<td align="right">422</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferCharacteristic</td>
+<td>HeatDissipationCharacteristic</td>
+<td>Directed</td>
+<td align="right">423</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationModelingAssumption</td>
+<td>HeatSourcePower</td>
+<td>Directed</td>
+<td align="right">424</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PowderBedFusionProcessParameter</td>
+<td>HeatSourcePower</td>
+<td>Directed</td>
+<td align="right">425</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalPhenomenon</td>
+<td>HeatTransfer</td>
+<td>Directed</td>
+<td align="right">426</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhenomenonCharacteristic</td>
+<td>HeatTransferCharacteristic</td>
+<td>Directed</td>
+<td align="right">427</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalModel</td>
+<td>HeatTransferModel</td>
+<td>Directed</td>
+<td align="right">428</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalModelPrediction</td>
+<td>HeatTransferModelPrediction</td>
+<td>Directed</td>
+<td align="right">429</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalAssumption</td>
+<td>HeatTransferModelingAssumption</td>
+<td>Directed</td>
+<td align="right">430</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationInitialCondition</td>
+<td>InitialPowderDensity</td>
+<td>Directed</td>
+<td align="right">431</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalPhenomenon</td>
+<td>IrradiationAbsorption</td>
+<td>Directed</td>
+<td align="right">432</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhenomenonCharacteristic</td>
+<td>IrradiationAbsorptionCharacteristic</td>
+<td>Directed</td>
+<td align="right">433</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalModel</td>
+<td>IrradiationAbsorptionModel</td>
+<td>Directed</td>
+<td align="right">434</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalModelPrediction</td>
+<td>IrradiationAbsorptionModelPrediction</td>
+<td>Directed</td>
+<td align="right">435</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalAssumption</td>
+<td>IrradiationAbsorptionModelingAssumption</td>
+<td>Directed</td>
+<td align="right">436</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionModelingAssumption</td>
+<td>IrradiationModelingAssumption</td>
+<td>Directed</td>
+<td align="right">437</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PowderBedFusionProcessParameter</td>
+<td>LayerThickness</td>
+<td>Directed</td>
+<td align="right">438</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Physical</td>
+<td>Material</td>
+<td>Directed</td>
+<td align="right">439</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>MaterialDistribution</td>
+<td>Directed</td>
+<td align="right">440</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionModelingAssumption</td>
+<td>MaterialDistribution</td>
+<td>Directed</td>
+<td align="right">441</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelInput</td>
+<td>MaterialProperty</td>
+<td>Directed</td>
+<td align="right">442</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MeltPoolShape</td>
+<td>MeltPoolDepth</td>
+<td>Directed</td>
+<td align="right">443</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MeltPoolShape</td>
+<td>MeltPoolLength</td>
+<td>Directed</td>
+<td align="right">444</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MeltPoolTemperature</td>
+<td>MeltPoolMaximumTemperature</td>
+<td>Directed</td>
+<td align="right">445</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>FluidMechanicsModelPrediction</td>
+<td>MeltPoolShape</td>
+<td>Directed</td>
+<td align="right">446</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MeltPoolSignature</td>
+<td>MeltPoolShape</td>
+<td>Directed</td>
+<td align="right">447</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ProcessSignature</td>
+<td>MeltPoolSignature</td>
+<td>Directed</td>
+<td align="right">448</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MeltPoolSignature</td>
+<td>MeltPoolTemperature</td>
+<td>Directed</td>
+<td align="right">449</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MeltPoolTemperature</td>
+<td>MeltPoolTemperatureGradient</td>
+<td>Directed</td>
+<td align="right">450</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MeltPoolShape</td>
+<td>MeltPoolWidth</td>
+<td>Directed</td>
+<td align="right">451</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhaseTransformationAssumption</td>
+<td>MeltingModelingAssumption</td>
+<td>Directed</td>
+<td align="right">452</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Prediction</td>
+<td>MicrostructuralModelPrediction</td>
+<td>Directed</td>
+<td align="right">453</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ProcessSignature</td>
+<td>Microstructure</td>
+<td>Directed</td>
+<td align="right">454</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MicrostructuralModelPrediction</td>
+<td>MicrostructureDistribution</td>
+<td>Directed</td>
+<td align="right">455</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MicrostructuralPhenomenon</td>
+<td>MicrostructureEvolution</td>
+<td>Directed</td>
+<td align="right">456</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Abstract</td>
+<td>Model</td>
+<td>Directed</td>
+<td align="right">457</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Characteristic</td>
+<td>ModelElement</td>
+<td>Directed</td>
+<td align="right">458</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelElement</td>
+<td>ModelingAssumption</td>
+<td>Directed</td>
+<td align="right">459</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelElement</td>
+<td>NumericalMethod</td>
+<td>Directed</td>
+<td align="right">460</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>EquipmentParameter</td>
+<td>OpticalParameter</td>
+<td>Directed</td>
+<td align="right">461</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialVendorSpecification</td>
+<td>PackingDensity</td>
+<td>Directed</td>
+<td align="right">462</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialDistribution</td>
+<td>Particle</td>
+<td>Directed</td>
+<td align="right">463</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransfer</td>
+<td>PhaseTransformation</td>
+<td>Directed</td>
+<td align="right">464</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferCharacteristic</td>
+<td>PhaseTransformationCharacteristic</td>
+<td>Directed</td>
+<td align="right">465</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Physical</td>
+<td>Phenomenon</td>
+<td>Directed</td>
+<td align="right">466</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Characteristic</td>
+<td>PhenomenonCharacteristic</td>
+<td>Directed</td>
+<td align="right">467</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Model</td>
+<td>PhysicsBasedModel</td>
+<td>Directed</td>
+<td align="right">468</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>SurfaceDistributionOfHeat</td>
+<td>PointSourceDistribution</td>
+<td>Directed</td>
+<td align="right">469</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BulkMaterialProperty</td>
+<td>PoissonsRatio</td>
+<td>Directed</td>
+<td align="right">470</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationModelPrediction</td>
+<td>PorosityDistribution</td>
+<td>Directed</td>
+<td align="right">471</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>AdditiveManufacturingProcess</td>
+<td>PowderBedFusionProcess</td>
+<td>Directed</td>
+<td align="right">472</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ProcessParameter</td>
+<td>PowderBedFusionProcessParameter</td>
+<td>Directed</td>
+<td align="right">473</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MaterialVendorSpecification</td>
+<td>PowderSizeDistribution</td>
+<td>Directed</td>
+<td align="right">474</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalReflectionProperty</td>
+<td>PowderSizeDistribution</td>
+<td>Directed</td>
+<td align="right">475</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>RadiationTransferProperty</td>
+<td>PowderSizeDistribution</td>
+<td>Directed</td>
+<td align="right">476</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelElement</td>
+<td>Prediction</td>
+<td>Directed</td>
+<td align="right">477</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Characteristic</td>
+<td>ProcessParameter</td>
+<td>Directed</td>
+<td align="right">478</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Characteristic</td>
+<td>ProcessSignature</td>
+<td>Directed</td>
+<td align="right">479</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Equation</td>
+<td>RadiationTransferModel</td>
+<td>Directed</td>
+<td align="right">480</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BulkMaterialProperty</td>
+<td>RadiativeProperty</td>
+<td>Directed</td>
+<td align="right">481</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Equation</td>
+<td>RayTracingModel</td>
+<td>Directed</td>
+<td align="right">482</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ProcessSignature</td>
+<td>ResidualStressDistribution</td>
+<td>Directed</td>
+<td align="right">483</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>SolidMechanicsModelPrediction</td>
+<td>ResidualStressDistribution</td>
+<td>Directed</td>
+<td align="right">484</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PowderBedFusionProcessParameter</td>
+<td>ScanningSpeed</td>
+<td>Directed</td>
+<td align="right">485</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PowderBedFusionProcess</td>
+<td>SelectiveLaserMelting</td>
+<td>Directed</td>
+<td align="right">486</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PowderBedFusionProcess</td>
+<td>SelectiveLaserSintering</td>
+<td>Directed</td>
+<td align="right">487</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ProcessSignature</td>
+<td>Shrinkage</td>
+<td>Directed</td>
+<td align="right">488</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>StructuralPhenomenon</td>
+<td>SolidMechanics</td>
+<td>Directed</td>
+<td align="right">489</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Prediction</td>
+<td>SolidMechanicsModelPrediction</td>
+<td>Directed</td>
+<td align="right">490</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationModelingAssumption</td>
+<td>StatisticalNatureOfIrradiationDistribution</td>
+<td>Directed</td>
+<td align="right">491</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>StatisticalNatureOfIrradiationDistribution</td>
+<td>StochasticIrradiation</td>
+<td>Directed</td>
+<td align="right">492</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>SolidMechanicsModelPrediction</td>
+<td>StrainDistribution</td>
+<td>Directed</td>
+<td align="right">493</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferProperty</td>
+<td>SurfaceDistributionOfAbsorbedHeat</td>
+<td>Directed</td>
+<td align="right">494</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>DimensionalityOfAbsorbedHeat</td>
+<td>SurfaceDistributionOfAbsorbedHeat</td>
+<td>Directed</td>
+<td align="right">495</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionModelPrediction</td>
+<td>SurfaceDistributionOfAbsorbedHeat</td>
+<td>Directed</td>
+<td align="right">496</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhysicalReflectionProperty</td>
+<td>SurfaceDistributionOfHeat</td>
+<td>Directed</td>
+<td align="right">497</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>RadiationTransferProperty</td>
+<td>SurfaceDistributionOfHeat</td>
+<td>Directed</td>
+<td align="right">498</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationModelingAssumption</td>
+<td>SurfaceDistributionOfHeat</td>
+<td>Directed</td>
+<td align="right">499</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BulkMaterialProperty</td>
+<td>ThermalConductivityOfTheSubstrate</td>
+<td>Directed</td>
+<td align="right">500</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>DimensionalityOfPhysicalSystem</td>
+<td>ThreeDimensional</td>
+<td>Directed</td>
+<td align="right">501</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelPrediction</td>
+<td>TimeHistoryOfEnthalpy</td>
+<td>Directed</td>
+<td align="right">502</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelPrediction</td>
+<td>TimeHistoryOfTemperature</td>
+<td>Directed</td>
+<td align="right">503</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>DimensionalityOfPhysicalSystem</td>
+<td>TwoDimensional</td>
+<td>Directed</td>
+<td align="right">504</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionNumericalMethod</td>
+<td>TwoFluxMethod</td>
+<td>Directed</td>
+<td align="right">505</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhaseTransformation</td>
+<td>Vaporization</td>
+<td>Directed</td>
+<td align="right">506</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>PhaseTransformationCharacteristic</td>
+<td>VaporizationCharacteristic</td>
+<td>Directed</td>
+<td align="right">507</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ProcessSignature</td>
+<td>Void</td>
+<td>Directed</td>
+<td align="right">508</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferProperty</td>
+<td>VolumetricDistributionOfAbsorbedHeat</td>
+<td>Directed</td>
+<td align="right">509</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>DimensionalityOfAbsorbedHeat</td>
+<td>VolumetricDistributionOfAbsorbedHeat</td>
+<td>Directed</td>
+<td align="right">510</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionModelPrediction</td>
+<td>VolumetricDistributionOfAbsorbedHeat</td>
+<td>Directed</td>
+<td align="right">511</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MeltingModelingAssumption</td>
+<td>WithinTemperatureRange</td>
+<td>Directed</td>
+<td align="right">512</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThreeDimensional</td>
+<td>3_3DimensionalModel</td>
+<td>Directed</td>
+<td align="right">513</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>BeerLambertLaw</td>
+<td>ConstantAbsorptivity</td>
+<td>Directed</td>
+<td align="right">514</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ThermalInitialCondition</td>
+<td>ConstantPreheatTemperature</td>
+<td>Directed</td>
+<td align="right">515</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>DeterministicIrradiation</td>
+<td>DeterministicLaserHeatFlux</td>
+<td>Directed</td>
+<td align="right">516</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>GaussianDistribution</td>
+<td>GaussianSurfaceDistributionOfHeat</td>
+<td>Directed</td>
+<td align="right">517</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>BeamSize</td>
+<td>Kolossov-SpotRadius</td>
+<td>Directed</td>
+<td align="right">518</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>HeatSourcePower</td>
+<td>Kolossov_AveragePower</td>
+<td>Directed</td>
+<td align="right">519</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ConsolidationByMeltingModel</td>
+<td>Kolossov_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">520</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ConsolidationBySintering</td>
+<td>Kolossov_ConsolidationPhenomenon</td>
+<td>Directed</td>
+<td align="right">521</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>HeatTransferModel</td>
+<td>Kolossov_HeatTransferModel</td>
+<td>Directed</td>
+<td align="right">522</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>HeatTransfer</td>
+<td>Kolossov_HeatTransferPhenomenon</td>
+<td>Directed</td>
+<td align="right">523</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ScanningSpeed</td>
+<td>Kolossov_LaserSpotSpeed</td>
+<td>Directed</td>
+<td align="right">524</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>MeltPoolMaximumTemperature</td>
+<td>Kolossov_MaximumTemperatureForSingleTrack</td>
+<td>Directed</td>
+<td align="right">525</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>LayerThickness</td>
+<td>Kolossov_PowderLayerThickness</td>
+<td>Directed</td>
+<td align="right">526</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionModel</td>
+<td>Kolossov_RadiationAbsorptionModel</td>
+<td>Directed</td>
+<td align="right">527</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorption</td>
+<td>Kolossov_RadiationAbsorptionPhenomenon</td>
+<td>Directed</td>
+<td align="right">528</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>SelectiveLaserSintering</td>
+<td>Kolossov_SLSProcess</td>
+<td>Directed</td>
+<td align="right">529</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>MetalAlloy</td>
+<td>Kolossov_Ti6Al4V</td>
+<td>Directed</td>
+<td align="right">530</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>PhysicalProperty</td>
+<td>LiMa_AbsorptionCoeffcientOfThePowderLayer</td>
+<td>Directed</td>
+<td align="right">531</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>AdiabaticBC</td>
+<td>LiMa_AdiabaticBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">532</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>BottomBoundaryCondition</td>
+<td>LiMa_BottomBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">533</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ThermalBoundaryCondition</td>
+<td>LiMa_BoundaryCondition</td>
+<td>Directed</td>
+<td align="right">534</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ConsolidationInitialCondition</td>
+<td>LiMa_ConsolidationInitialCondition</td>
+<td>Directed</td>
+<td align="right">535</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ConsolidationByMeltingModel</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">536</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ConsolidationByMelting</td>
+<td>LiMa_ConsolidationPhenomenon</td>
+<td>Directed</td>
+<td align="right">537</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>LiMa_ConsolidationPhysicalProperty</td>
+<td>Directed</td>
+<td align="right">538</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>PhysicalProperty</td>
+<td>LiMa_ConvectionHeatTransferCoefficient</td>
+<td>Directed</td>
+<td align="right">539</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ConsolidationModelPrediction</td>
+<td>LiMa_DensityOfThePowderBed</td>
+<td>Directed</td>
+<td align="right">540</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>DensityDistribution</td>
+<td>LiMa_DensityOfThePowderBed</td>
+<td>Directed</td>
+<td align="right">541</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>DensityOfBulkMaterial</td>
+<td>LiMa_DensityOfTheSolidMaterial</td>
+<td>Directed</td>
+<td align="right">542</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>BedEmissivity</td>
+<td>LiMa_Emissivity</td>
+<td>Directed</td>
+<td align="right">543</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>GaussianDistribution</td>
+<td>LiMa_GaussianDistribution</td>
+<td>Directed</td>
+<td align="right">544</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ThermalInitialCondition</td>
+<td>LiMa_HeatConductionInitialCondition</td>
+<td>Directed</td>
+<td align="right">545</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>HeatTransferModel</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">546</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>HeatTransferModelingAssumption</td>
+<td>LiMa_HeatConductionModelingAssumption</td>
+<td>Directed</td>
+<td align="right">547</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>HeatTransfer</td>
+<td>LiMa_HeatConductionPhenomenon</td>
+<td>Directed</td>
+<td align="right">548</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>Material</td>
+<td>LiMa_Inconel625</td>
+<td>Directed</td>
+<td align="right">549</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>InitialPowderDensity</td>
+<td>LiMa_InitialPowderPackingRatio</td>
+<td>Directed</td>
+<td align="right">550</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>TopBoundaryCondition</td>
+<td>LiMa_InputHeatFlux</td>
+<td>Directed</td>
+<td align="right">551</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionModel</td>
+<td>LiMa_IrradiationAbsorptionModel</td>
+<td>Directed</td>
+<td align="right">552</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorptionModelingAssumption</td>
+<td>LiMa_IrradiationAbsorptionModelingAssumption</td>
+<td>Directed</td>
+<td align="right">553</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>IrradiationAbsorption</td>
+<td>LiMa_IrradiationAbsorptionPhenomenon</td>
+<td>Directed</td>
+<td align="right">554</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ProcessParameter</td>
+<td>LiMa_LaserPBF-ProcessParameter</td>
+<td>Directed</td>
+<td align="right">555</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ProcessSignature</td>
+<td>LiMa_LaserPBF-ProcessSignature</td>
+<td>Directed</td>
+<td align="right">556</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>SelectiveLaserMelting</td>
+<td>LiMa_LaserPowderBedFusionProcess</td>
+<td>Directed</td>
+<td align="right">557</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>HeatSourcePower</td>
+<td>LiMa_LaserPower</td>
+<td>Directed</td>
+<td align="right">558</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>Prediction</td>
+<td>LiMa_LaserSurfaceHeatFlux</td>
+<td>Directed</td>
+<td align="right">559</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>SurfaceDistributionOfAbsorbedHeat</td>
+<td>LiMa_LaserSurfaceHeatFlux</td>
+<td>Directed</td>
+<td align="right">560</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>LiquidusTemperature</td>
+<td>LiMa_LiquidusTemperature</td>
+<td>Directed</td>
+<td align="right">561</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>LiMa_MeltStateVariable</td>
+<td>Directed</td>
+<td align="right">562</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>MeltPoolMaximumTemperature</td>
+<td>LiMa_PeakTemperature</td>
+<td>Directed</td>
+<td align="right">563</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>PhaseTransformationAssumption</td>
+<td>LiMa_PhaseChangesAssumption</td>
+<td>Directed</td>
+<td align="right">564</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>LayerThickness</td>
+<td>LiMa_PowderLayerThickness</td>
+<td>Directed</td>
+<td align="right">565</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>PackingDensity</td>
+<td>LiMa_PowderPackingRatio</td>
+<td>Directed</td>
+<td align="right">566</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>InitialDistributionOfTemperature</td>
+<td>LiMa_PreheatTemperature</td>
+<td>Directed</td>
+<td align="right">567</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>TopBoundaryCondition</td>
+<td>LiMa_Radiation</td>
+<td>Directed</td>
+<td align="right">568</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>BeamSize</td>
+<td>LiMa_RadiusOfTheLaserBeam</td>
+<td>Directed</td>
+<td align="right">569</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ScanningSpeed</td>
+<td>LiMa_ScanningSpeed</td>
+<td>Directed</td>
+<td align="right">570</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>SideBoundaryCondition</td>
+<td>LiMa_SideBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">571</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>SolidusTemperature</td>
+<td>LiMa_SolidusTemperature</td>
+<td>Directed</td>
+<td align="right">572</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>LiMa_SpecificHeatCapacity</td>
+<td>Directed</td>
+<td align="right">573</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>TopBoundaryCondition</td>
+<td>LiMa_SurfaceConvection</td>
+<td>Directed</td>
+<td align="right">574</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>LiMa_TemperatureField</td>
+<td>Directed</td>
+<td align="right">575</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>Prediction</td>
+<td>LiMa_TemperatureHistoryOutput</td>
+<td>Directed</td>
+<td align="right">576</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>TimeHistoryOfTemperature</td>
+<td>LiMa_TemperatureHistoryOutput</td>
+<td>Directed</td>
+<td align="right">577</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ThermalConductivityOfTheBulkMaterial</td>
+<td>LiMa_ThermalConductivityOfTheBulkMaterial</td>
+<td>Directed</td>
+<td align="right">578</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ThermalConductivityInPowderBed</td>
+<td>LiMa_ThermalConductivityOfThePowderBed</td>
+<td>Directed</td>
+<td align="right">579</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>HeatTransferModel</td>
+<td>LiMa_ThermalModel</td>
+<td>Directed</td>
+<td align="right">580</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>HeatTransferProperty</td>
+<td>LiMa_ThermalPhysicalProperty</td>
+<td>Directed</td>
+<td align="right">581</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>TopBoundaryCondition</td>
+<td>LiMa_TopBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">582</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>DirectMetalLaserMelting</td>
+<td>Roberts_LaserMeltingOfMetalPowdersProcess</td>
+<td>Directed</td>
+<td align="right">583</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>HeatSourcePower</td>
+<td>Roberts_LaserPower</td>
+<td>Directed</td>
+<td align="right">584</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>PowderSizeDistribution</td>
+<td>Roberts_PowderSize</td>
+<td>Directed</td>
+<td align="right">585</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ScanningSpeed</td>
+<td>Roberts_ScanSpeed</td>
+<td>Directed</td>
+<td align="right">586</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>BeamSize</td>
+<td>Roberts_SpotSize</td>
+<td>Directed</td>
+<td align="right">587</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>MetalAlloy</td>
+<td>Roberts_Ti6Al4V</td>
+<td>Directed</td>
+<td align="right">588</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>SurfaceDistributionOfAbsorbedHeat</td>
+<td>SurfaceHeatAbsorption</td>
+<td>Directed</td>
+<td align="right">589</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>ConsolidationAssumption</td>
+<td>TemperatureDependentDensityOfTheSolid</td>
+<td>Directed</td>
+<td align="right">590</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>FouriersLaw</td>
+<td>TemperatureDependentFouriersLaw</td>
+<td>Directed</td>
+<td align="right">591</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>LawOfPhysicsForConsolidation</td>
+<td>TemperatutreDependentPowderPackingRatio</td>
+<td>Directed</td>
+<td align="right">592</td>
+<td>1</td>
+<td>memberOf</td>
+</tr>
+<tr>
+<td>LiMa_HeatConductionModelingAssumption</td>
+<td>3_3DimensionalModel</td>
+<td>Directed</td>
+<td align="right">593</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_IrradiationAbsorptionModelingAssumption</td>
+<td>ConstantAbsorptivity</td>
+<td>Directed</td>
+<td align="right">594</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_HeatConductionModelingAssumption</td>
+<td>DeterministicLaserHeatFlux</td>
+<td>Directed</td>
+<td align="right">595</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_IrradiationAbsorptionModelingAssumption</td>
+<td>GaussianSurfaceDistributionOfHeat</td>
+<td>Directed</td>
+<td align="right">596</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>Kolossov_SLSProcess</td>
+<td>Kolossov_ConsolidationPhenomenon</td>
+<td>Directed</td>
+<td align="right">597</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>Kolossov_SLSProcess</td>
+<td>Kolossov_HeatTransferPhenomenon</td>
+<td>Directed</td>
+<td align="right">598</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>Kolossov_SLSProcess</td>
+<td>Kolossov_RadiationAbsorptionPhenomenon</td>
+<td>Directed</td>
+<td align="right">599</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_IrradiationAbsorptionModelingAssumption</td>
+<td>LiMa_AbsorptionCoeffcientOfThePowderLayer</td>
+<td>Directed</td>
+<td align="right">600</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_BoundaryCondition</td>
+<td>LiMa_BottomBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">601</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_HeatConductionModelingAssumption</td>
+<td>LiMa_BoundaryCondition</td>
+<td>Directed</td>
+<td align="right">602</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_LaserPowderBedFusionProcess</td>
+<td>LiMa_ConsolidationPhenomenon</td>
+<td>Directed</td>
+<td align="right">603</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_ThermalPhysicalProperty</td>
+<td>LiMa_DensityOfThePowderBed</td>
+<td>Directed</td>
+<td align="right">604</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_ThermalModel</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">605</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_LaserPowderBedFusionProcess</td>
+<td>LiMa_HeatConductionPhenomenon</td>
+<td>Directed</td>
+<td align="right">606</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_ThermalModel</td>
+<td>LiMa_IrradiationAbsorptionModel</td>
+<td>Directed</td>
+<td align="right">607</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_LaserPowderBedFusionProcess</td>
+<td>LiMa_IrradiationAbsorptionPhenomenon</td>
+<td>Directed</td>
+<td align="right">608</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_HeatConductionModelingAssumption</td>
+<td>LiMa_PhaseChangesAssumption</td>
+<td>Directed</td>
+<td align="right">609</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_ThermalPhysicalProperty</td>
+<td>LiMa_PreheatTemperature</td>
+<td>Directed</td>
+<td align="right">610</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_BoundaryCondition</td>
+<td>LiMa_SideBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">611</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_ThermalPhysicalProperty</td>
+<td>LiMa_SpecificHeatCapacity</td>
+<td>Directed</td>
+<td align="right">612</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_HeatConductionModelingAssumption</td>
+<td>LiMa_ThermalPhysicalProperty</td>
+<td>Directed</td>
+<td align="right">613</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_BoundaryCondition</td>
+<td>LiMa_TopBoundaryCondition</td>
+<td>Directed</td>
+<td align="right">614</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_HeatConductionModelingAssumption</td>
+<td>SurfaceHeatAbsorption</td>
+<td>Directed</td>
+<td align="right">615</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_HeatConductionModelingAssumption</td>
+<td>TemperatureDependentFouriersLaw</td>
+<td>Directed</td>
+<td align="right">616</td>
+<td>1</td>
+<td>partOf</td>
+</tr>
+<tr>
+<td>LiMa_DensityOfTheSolidMaterial</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">617</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_InitialPowderPackingRatio</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">618</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_LiquidusTemperature</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">619</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_SolidusTemperature</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">620</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_TemperatureField</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">621</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_AbsorptionCoeffcientOfThePowderLayer</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">622</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_ConvectionHeatTransferCoefficient</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">623</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_DensityOfThePowderBed</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">624</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_Emissivity</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">625</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_LaserPower</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">626</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_PowderPackingRatio</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">627</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_PreheatTemperature</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">628</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_ScanningSpeed</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">629</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_SpecificHeatCapacity</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">630</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_ThermalConductivityOfTheBulkMaterial</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">631</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_ThermalConductivityOfThePowderBed</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">632</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_AbsorptionCoeffcientOfThePowderLayer</td>
+<td>LiMa_IrradiationAbsorptionModel</td>
+<td>Directed</td>
+<td align="right">633</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_GaussianDistribution</td>
+<td>LiMa_IrradiationAbsorptionModel</td>
+<td>Directed</td>
+<td align="right">634</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_LaserPower</td>
+<td>LiMa_IrradiationAbsorptionModel</td>
+<td>Directed</td>
+<td align="right">635</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_RadiusOfTheLaserBeam</td>
+<td>LiMa_IrradiationAbsorptionModel</td>
+<td>Directed</td>
+<td align="right">636</td>
+<td>1</td>
+<td>requiresInput</td>
+</tr>
+<tr>
+<td>LiMa_ConsolidationInitialCondition</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">637</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>LiMa_LiquidusTemperature</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">638</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>LiMa_SolidusTemperature</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">639</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>LiMa_TemperatureField</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">640</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>TemperatureDependentDensityOfTheSolid</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">641</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>TemperatutreDependentPowderPackingRatio</td>
+<td>LiMa_ConsolidationModel</td>
+<td>Directed</td>
+<td align="right">642</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>3_3DimensionalModel</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">643</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>DeterministicLaserHeatFlux</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">644</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>LiMa_BoundaryCondition</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">645</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>LiMa_HeatConductionInitialCondition</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">646</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>LiMa_PhaseChangesAssumption</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">647</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>SurfaceHeatAbsorption</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">648</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>TemperatureDependentFouriersLaw</td>
+<td>LiMa_HeatConductionModel</td>
+<td>Directed</td>
+<td align="right">649</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>ConstantAbsorptivity</td>
+<td>LiMa_IrradiationAbsorptionModel</td>
+<td>Directed</td>
+<td align="right">650</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>GaussianSurfaceDistributionOfHeat</td>
+<td>LiMa_IrradiationAbsorptionModel</td>
+<td>Directed</td>
+<td align="right">651</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>LiMa_AbsorptionCoeffcientOfThePowderLayer</td>
+<td>LiMa_IrradiationAbsorptionModel</td>
+<td>Directed</td>
+<td align="right">652</td>
+<td>1</td>
+<td>requiresAssumption</td>
+</tr>
+<tr>
+<td>HeatTransferModel</td>
+<td>Conduction_model</td>
+<td>Directed</td>
+<td align="right">653</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Fluid_flow_model</td>
+<td>Conservation_equation_for_energy</td>
+<td>Directed</td>
+<td align="right">654</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Fluid_flow_model</td>
+<td>Conservation_equation_for_mass</td>
+<td>Directed</td>
+<td align="right">655</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Fluid_flow_model</td>
+<td>Conservation_equation_for_momentum</td>
+<td>Directed</td>
+<td align="right">656</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModel</td>
+<td>Convection_model</td>
+<td>Directed</td>
+<td align="right">657</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>Distance_along_the_i_direction</td>
+<td>Directed</td>
+<td align="right">658</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationPhysicalProperty</td>
+<td>Effective_viscosity</td>
+<td>Directed</td>
+<td align="right">659</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Mechanical_property</td>
+<td>Elongation</td>
+<td>Directed</td>
+<td align="right">660</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>FluidMechanicsModel</td>
+<td>Fluid_flow_model</td>
+<td>Directed</td>
+<td align="right">661</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Mechanical_property</td>
+<td>Hardness_Vickers</td>
+<td>Directed</td>
+<td align="right">662</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Absorbed_laser_power</td>
+<td>HeatFluxOfConstantDensity</td>
+<td>Directed</td>
+<td align="right">663</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Length_of_laser_beam</td>
+<td>HeatFluxOfConstantDensity</td>
+<td>Directed</td>
+<td align="right">664</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Width_of_laser_beam</td>
+<td>HeatFluxOfConstantDensity</td>
+<td>Directed</td>
+<td align="right">665</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>Heat_flux_vector</td>
+<td>Directed</td>
+<td align="right">666</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationByMeltingModel</td>
+<td>Keyhole-mode_laser_melting</td>
+<td>Directed</td>
+<td align="right">667</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ConsolidationByMeltingModel</td>
+<td>Melting_with_shrinkage_stage_model</td>
+<td>Directed</td>
+<td align="right">668</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Mechanical_property</td>
+<td>PartDensity</td>
+<td>Directed</td>
+<td align="right">669</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MicrostructuralCharacteristic</td>
+<td>Phase_composition</td>
+<td>Directed</td>
+<td align="right">670</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Mechanical_property</td>
+<td>PorosityInPart</td>
+<td>Directed</td>
+<td align="right">671</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalModel</td>
+<td>Preheating_stage_model</td>
+<td>Directed</td>
+<td align="right">672</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>HeatTransferModel</td>
+<td>Radiation_model</td>
+<td>Directed</td>
+<td align="right">673</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>MicrostructuralModel</td>
+<td>Resolidification_stage_model</td>
+<td>Directed</td>
+<td align="right">674</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ThermalModel</td>
+<td>Rosenthal_model</td>
+<td>Directed</td>
+<td align="right">675</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>ModelVariable</td>
+<td>Source_term_for_the_j_component_momentum_equation</td>
+<td>Directed</td>
+<td align="right">676</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Mechanical_property</td>
+<td>Surface_roughness</td>
+<td>Directed</td>
+<td align="right">677</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>GaussianDistribution</td>
+<td>Surface_roughness</td>
+<td>Directed</td>
+<td align="right">678</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>HeatFluxOfConstantDensity</td>
+<td>Surface_roughness</td>
+<td>Directed</td>
+<td align="right">679</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Tensile_strength</td>
+<td>Mechanical_property</td>
+<td>Directed</td>
+<td align="right">680</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>ModelVariable</td>
+<td>Directed</td>
+<td align="right">681</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Type_of_microstructure_growth</td>
+<td>MicrostructuralCharacteristic</td>
+<td>Directed</td>
+<td align="right">682</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Velocity_component_along_the_i_direction</td>
+<td>ModelVariable</td>
+<td>Directed</td>
+<td align="right">683</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Velocity_component_along_the_j_direction</td>
+<td>ModelVariable</td>
+<td>Directed</td>
+<td align="right">684</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>Yield_strength</td>
+<td>Mechanical_property</td>
+<td>Directed</td>
+<td align="right">685</td>
+<td>1</td>
+<td>SubclassOf</td>
+</tr>
+<tr>
+<td>BuildingDirection</td>
+<td>PorosityInPart</td>
+<td>Directed</td>
+<td align="right">686</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>BuildingDirection</td>
+<td>Microstructure</td>
+<td>Directed</td>
+<td align="right">687</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>DentriticGrainSize</td>
+<td>Fatigue</td>
+<td>Directed</td>
+<td align="right">688</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>PorosityInPart</td>
+<td>PartDensity</td>
+<td>Directed</td>
+<td align="right">689</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>PartDensity</td>
+<td>Fatigue</td>
+<td>Directed</td>
+<td align="right">690</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Surface_roughness</td>
+<td>Fatigue</td>
+<td>Directed</td>
+<td align="right">691</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Fatigue</td>
+<td>Directed</td>
+<td align="right">692</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Annealing</td>
+<td>Fatigue</td>
+<td>Directed</td>
+<td align="right">693</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>Fatigue</td>
+<td>StressAmplitude</td>
+<td>Directed</td>
+<td align="right">694</td>
+<td>1</td>
+<td>ParentClassOf</td>
+</tr>
+<tr>
+<td>Fatigue</td>
+<td>NumberOfCyclesToFailure</td>
+<td>Directed</td>
+<td align="right">695</td>
+<td>1</td>
+<td>ParentClassOf</td>
+</tr>
+<tr>
+<td>StressAmplitude</td>
+<td>FatigueLimit</td>
+<td>Directed</td>
+<td align="right">696</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>NumberOfCyclesToFailure</td>
+<td>FatigueLimit</td>
+<td>Directed</td>
+<td align="right">697</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>ScanningSpeed</td>
+<td>PorosityInPart</td>
+<td>Directed</td>
+<td align="right">699</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>HatchingDistance</td>
+<td>PorosityInPart</td>
+<td>Directed</td>
+<td align="right">700</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+<tr>
+<td>HatchingSpeed</td>
+<td>PorosityInPart</td>
+<td>Directed</td>
+<td align="right">701</td>
+<td>1</td>
+<td>Influences</td>
+</tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    
+	td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+	td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }	
+  }
+}
+</script>
+</body>
+</html>

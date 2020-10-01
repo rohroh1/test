@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2020-09-17">
+    <creator>Gephi 0.9</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="indegree" title="In-Degree" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="outdegree" title="Out-Degree" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="degree" title="Degree" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="weighted indegree" title="Weighted In-Degree" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="weighted outdegree" title="Weighted Out-Degree" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="weighted degree" title="Weighted Degree" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="harmonicclosnesscentrality" title="Harmonic Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="authority" title="Authority" type="float">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="hub" title="Hub" type="float">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="pageranks" title="PageRank" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="componentnumber" title="Component ID" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="strongcompnum" title="Strongly-Connected ID" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="clustering" title="Clustering Coefficient" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="eigencentrality" title="Eigenvector Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="reference1" title="reference1" type="string"></attribute>
+      <attribute id="reference2" title="reference2" type="string"></attribute>
+      <attribute id="reference3" title="reference3" type="string"></attribute>
+    </attributes>
+    <nodes>
+      <node id="Melt Pool Size">
+        <attvalues>
+          <attvalue for="indegree" value="7"></attvalue>
+          <attvalue for="outdegree" value="2"></attvalue>
+          <attvalue for="degree" value="9"></attvalue>
+          <attvalue for="weighted indegree" value="7.0"></attvalue>
+          <attvalue for="weighted outdegree" value="2.0"></attvalue>
+          <attvalue for="weighted degree" value="9.0"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.4090909090909091"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5185185185185186"></attvalue>
+          <attvalue for="betweenesscentrality" value="94.86746277458352"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+          <attvalue for="pageranks" value="0.10575446307780807"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="14"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.38492546064739447"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S2214860414000141?casa_token=OTHEO8tM9KUAAAAA:eQviy-hMko5cgdkNufLW28BuUVoFnWY3V2-IUy5d9oGBsNOZTJWjCSvr5YpXRsgzB7rCLK7jZ9w"></attvalue>
+          <attvalue for="reference2" value="https://repositories.lib.utexas.edu/handle/2152/78483"></attvalue>
+          <attvalue for="reference3" value="https://repositories.lib.utexas.edu/bitstream/handle/2152/79942/2004-16-Beuth.pdf?sequence=2"></attvalue>
+        </attvalues>
+        <viz:size value="200.0"></viz:size>
+        <viz:position x="42.514133" y="349.37872"></viz:position>
+        <viz:color r="154" g="150" b="229"></viz:color>
+      </node>
+      <node id="Fatigue">
+        <attvalues>
+          <attvalue for="indegree" value="0"></attvalue>
+          <attvalue for="outdegree" value="8"></attvalue>
+          <attvalue for="degree" value="8"></attvalue>
+          <attvalue for="weighted indegree" value="0.0"></attvalue>
+          <attvalue for="weighted outdegree" value="8.0"></attvalue>
+          <attvalue for="weighted degree" value="8.0"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.40350877192982454"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5717391304347826"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.64126396"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+          <attvalue for="pageranks" value="0.010841876383662866"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="23"></attvalue>
+          <attvalue for="clustering" value="0.01785714365541935"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S0142112317300014?casa_token=Pxgh6zOcurgAAAAA:15dZdZH2FLM9bRQWhx2B6UnFFIQWme8LWfJ-CwuSp9SvHZCuIjbFrHglQTX1xa7kYW4oZdHDWmU"></attvalue>
+          <attvalue for="reference2" value="https://www.sciencedirect.com/science/article/pii/S0013794417310068?casa_token=HFfx40Cu-fkAAAAA:e2x0ZqbV2Wa1aBYqT1yTXD4c8_9HiAeBIqxKFoXRHuREKGPzkrN7bzfaHH3YB8UZl2cNfcVfzk8"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S0264127516306335?casa_token=FJp0kyqVurMAAAAA:m9QlwWCHddn_Z3G6dzvUyokA2OyaHoMrgJb95NJ4xwkdpydhG6OG46zu_O3a727dSTimg7L-77g"></attvalue>
+        </attvalues>
+        <viz:size value="185.7143"></viz:size>
+        <viz:position x="3532.0034" y="1235.4639"></viz:position>
+        <viz:color r="249" g="119" b="67"></viz:color>
+      </node>
+      <node id="Tensile Strength">
+        <attvalues>
+          <attvalue for="indegree" value="0"></attvalue>
+          <attvalue for="outdegree" value="7"></attvalue>
+          <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="weighted indegree" value="0.0"></attvalue>
+          <attvalue for="weighted outdegree" value="7.0"></attvalue>
+          <attvalue for="weighted degree" value="7.0"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.38461538461538464"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5575"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.600444"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+          <attvalue for="pageranks" value="0.010841876383662866"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="26"></attvalue>
+          <attvalue for="clustering" value="0.02380952425301075"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S135964541400980X?casa_token=Wqd6i4pLjFgAAAAA:OklMtaUrLT9aguSGt5a7O5W9kYCqRkf-vKmqkMnrUaAqY3JvuguXYo3R_udCGZWHcxlNctTLogo"></attvalue>
+          <attvalue for="reference2" value="https://www.sciencedirect.com/science/article/abs/pii/S1359836815003777"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S1359645416301744?casa_token=oTV8Mwc3izMAAAAA:DoI6HhIk6VlPcCS7Cay2Ooz2VCaJ_-ikjCAwO0XHEbDwi1CjGPz62_d38iUistRo7o2xAkncf2k"></attvalue>
+        </attvalues>
+        <viz:size value="171.42857"></viz:size>
+        <viz:position x="3490.3718" y="541.2886"></viz:position>
+        <viz:color r="249" g="119" b="67"></viz:color>
+      </node>
+      <node id="Thermal Distortion">
+        <attvalues>
+          <attvalue for="indegree" value="4"></attvalue>
+          <attvalue for="outdegree" value="2"></attvalue>
+          <attvalue for="degree" value="6"></attvalue>
+          <attvalue for="weighted indegree" value="4.0"></attvalue>
+          <attvalue for="weighted outdegree" value="2.0"></attvalue>
+          <attvalue for="weighted degree" value="6.0"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.38461538461538464"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4833333333333333"></attvalue>
+          <attvalue for="betweenesscentrality" value="32.132537225416485"></attvalue>
+          <attvalue for="authority" value="0.3331851"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+          <attvalue for="pageranks" value="0.029246849984316366"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="10"></attvalue>
+          <attvalue for="clustering" value="0.06666667014360428"></attvalue>
+          <attvalue for="eigencentrality" value="0.05918943528180647"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S1359646216304195?casa_token=fc6LiLTMeHUAAAAA:__14pD07nClrxlXJdWppoPdNcFLwqdIkFv789uIlizMbgBgKDAp2A9RYIyU4HPAuXDvF74EsEDA"></attvalue>
+          <attvalue for="reference2" value="https://www.sciencedirect.com/science/article/pii/S0927025616304980?casa_token=FZdsqtMV1PkAAAAA:rVtJ2j-ctfBnAhvWJTG-oqGnRhF6NHtmK5Umx3CqrWpV7bTQgD4gNIfxnFg4XgYI88ZsXDYHWbY"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S221384631830172X?casa_token=a_NNx_OB7KwAAAAA:21KKrEwz-l2ockkEFFcPEY8Ua9FctUD4Bdd4uOmFAQLdiBgu0O0Wzf6QuIopL8SQR8lgHcxOI8g"></attvalue>
+        </attvalues>
+        <viz:size value="157.14285"></viz:size>
+        <viz:position x="1464.1093" y="-1161.5869"></viz:position>
+        <viz:color r="40" g="179" b="106"></viz:color>
+      </node>
+      <node id="Thermal radiation">
+        <attvalues>
+          <attvalue for="indegree" value="3"></attvalue>
+          <attvalue for="outdegree" value="2"></attvalue>
+          <attvalue for="degree" value="5"></attvalue>
+          <attvalue for="weighted indegree" value="3.0"></attvalue>
+          <attvalue for="weighted outdegree" value="2.0"></attvalue>
+          <attvalue for="weighted degree" value="5.0"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.5"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.611111111111111"></attvalue>
+          <attvalue for="betweenesscentrality" value="62.46388028895768"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+          <attvalue for="pageranks" value="0.08547342492084"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="6"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.696798500220923"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S0264127518308827"></attvalue>
+          <attvalue for="reference2" value="https://aip.scitation.org/doi/abs/10.1063/1.4914606?casa_token=pSq3Q4d0TjwAAAAA%3AoQlhyRCOd7PvdiZUZEM5CPzYiGm1cP1xCOrjbhf20a1WT1Rhdk0zKEcDjeabjDxSGFnBOk6YPmTETA&amp;"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S2214860414000256?casa_token=S8oxUtX4LZgAAAAA:BRJcWKtU30xAlp2ym5JFhafL89nPQr-eaTD6AabMZ42qYyKl9A-k2v6QCkzDk-axE3iekNoOuuA"></attvalue>
+        </attvalues>
+        <viz:size value="142.85715"></viz:size>
+        <viz:position x="-1196.392" y="-899.1966"></viz:position>
+        <viz:color r="0" g="183" b="218"></viz:color>
+      </node>
+      <node id="Density">
+        <attvalues>
+          <attvalue for="indegree" value="0"></attvalue>
+          <attvalue for="outdegree" value="5"></attvalue>
+          <attvalue for="degree" value="5"></attvalue>
+          <attvalue for="weighted indegree" value="0.0"></attvalue>
+          <attvalue for="weighted outdegree" value="5.0"></attvalue>
+          <attvalue for="weighted degree" value="5.0"></attvalue>
+          <attvalue for="eccentricity" value="6.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3191489361702128"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.51"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.45644164"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+          <attvalue for="pageranks" value="0.010841876383662866"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="24"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="reference1" value="https://www.tandfonline.com/doi/full/10.1179/0032589912Z.00000000082?casa_token=50aDbbRl6PkAAAAA%3A1JB00BvijNOgryR6b4gAH3vMqOftRBxke77cKKVWtaQbAvj6ZtBjXxE2jgh0XkC5EbkVmsBz9mxCZg"></attvalue>
+          <attvalue for="reference2" value="https://asmedigitalcollection.asme.org/manufacturingscience/article/137/2/021004/377466/Efficient-Design-Optimization-of-Variable-Density?casa_token=sET6fcr15xUAAAAA:KW6V1ykczb2kTajlzm-6DFpJTnSon006h33liuzkHVgXpcqveu7nG84FWgcIyYZJ1bDVLbFieA"></attvalue>
+          <attvalue for="reference3" value="https://www.tandfonline.com/doi/full/10.1080/02670836.2017.1289444?casa_token=yb1SsiMYJckAAAAA%3AQMONo-xHoXbGmsX46szovU7AkbY9ajJ49brR3gZvQeSVy40MPNvn5oUncVItSoSM-E-0e61iYU38LA"></attvalue>
+        </attvalues>
+        <viz:size value="142.85715"></viz:size>
+        <viz:position x="3494.8333" y="-508.15363"></viz:position>
+        <viz:color r="249" g="119" b="67"></viz:color>
+      </node>
+      <node id="Surface roughness">
+        <attvalues>
+          <attvalue for="indegree" value="2"></attvalue>
+          <attvalue for="outdegree" value="2"></attvalue>
+          <attvalue for="degree" value="4"></attvalue>
+          <attvalue for="weighted indegree" value="2.0"></attvalue>
+          <attvalue for="weighted outdegree" value="2.0"></attvalue>
+          <attvalue for="weighted degree" value="4.0"></attvalue>
+          <attvalue for="eccentricity" value="6.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.2727272727272727"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.3875000000000001"></attvalue>
+          <attvalue for="betweenesscentrality" value="7.0"></attvalue>
+          <attvalue for="authority" value="0.17605695"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+          <attvalue for="pageranks" value="0.01660588393588785"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="22"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.01390055527872296"></attvalue>
+          <attvalue for="reference1" value="https://www.emerald.com/insight/content/doi/10.1108/RPJ-02-2013-0017/full/html"></attvalue>
+          <attvalue for="reference2" value="https://core.ac.uk/download/pdf/82011742.pdf"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S0142112318303050?casa_token=LbIiD8EIYx8AAAAA:GuToNVZtumWJJpN1KhH_fVoVaEY-eSo8PznrvXYlwiE8JKZS6OBBOG-wATJMVkmfC6VVFho8RLs"></attvalue>
+        </attvalues>
+        <viz:size value="128.57143"></viz:size>
+        <viz:position x="2718.8384" y="-756.8523"></viz:position>
+        <viz:color r="154" g="150" b="229"></viz:color>
+      </node>
+      <node id="Void">
+        <attvalues>
+          <attvalue for="indegree" value="3"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="4"></attvalue>
+          <attvalue for="weighted indegree" value="3.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="4.0"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3125"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.39000000000000007"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.773492554916704"></attvalue>
+          <attvalue for="authority" value="0.39372736"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+          <attvalue for="pageranks" value="0.015156647751328427"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="19"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.02085083291808444"></attvalue>
+          <attvalue for="reference1" value="https://link.springer.com/article/10.1007/s11465-015-0340-3"></attvalue>
+          <attvalue for="reference2" value="https://www.sciencedirect.com/science/article/pii/S2214860417300088?casa_token=fx2qJzf2TGQAAAAA:G_4CXrINv6t02Nqz98vDuOudQXDoJ4J7xOKbRjD7ZSD9E7SuYyN_8sHctAhk92du3xQlkIXjjWM"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S2214860417302804?casa_token=9LOH5tiL8Q4AAAAA:wVy1ivjH49rnlDDUJRYmCUW0pmLOWu2iIZyWP_jX-wp-47u3ud8XnjBslM1KCyoVar3G5UcvmFE"></attvalue>
+        </attvalues>
+        <viz:size value="128.57143"></viz:size>
+        <viz:position x="1628.1401" y="1823.1023"></viz:position>
+        <viz:color r="249" g="119" b="67"></viz:color>
+      </node>
+      <node id="Keyhole">
+        <attvalues>
+          <attvalue for="indegree" value="3"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="4"></attvalue>
+          <attvalue for="weighted indegree" value="3.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="4.0"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3125"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.39000000000000007"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.773492554916704"></attvalue>
+          <attvalue for="authority" value="0.39372736"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+          <attvalue for="pageranks" value="0.015156647751328427"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="18"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.02085083291808444"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S0924013614002283?casa_token=g8g03fxWISoAAAAA:5FgU5kIj6mcGXrLHDuPI21GzM9Q6zstE6TpyizzX-PxAbNEyyY3e5idnH2Q4-M6ekeckL9CewTc"></attvalue>
+          <attvalue for="reference2" value="https://www.sciencedirect.com/science/article/pii/S1875389215015424"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S0017931019305113?casa_token=ueA2uPTuyP4AAAAA:BrRC1T8o0o7l5jDsZPFB75IrnO7UpfKoF-ds8HZ7ynqSFRD07rMfQVjwc9dy-eew-NDNsAowqx8"></attvalue>
+        </attvalues>
+        <viz:size value="128.57143"></viz:size>
+        <viz:position x="1534.4579" y="1574.4094"></viz:position>
+        <viz:color r="249" g="119" b="67"></viz:color>
+      </node>
+      <node id="Cavity">
+        <attvalues>
+          <attvalue for="indegree" value="3"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="4"></attvalue>
+          <attvalue for="weighted indegree" value="3.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="4.0"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3125"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.39000000000000007"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.773492554916704"></attvalue>
+          <attvalue for="authority" value="0.39372736"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+          <attvalue for="pageranks" value="0.015156647751328427"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="17"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.02085083291808444"></attvalue>
+          <attvalue for="reference1" value="https://ieeexplore.ieee.org/abstract/document/7742982/?casa_token=NfA7PBCgQUIAAAAA:UOO01I556AyUeKokWWfb15LPiHgqsBIxeAya9CXy7Fm1WcF_2bQE5MxcSISqCCUJg28tLCCsmg"></attvalue>
+          <attvalue for="reference2" value="https://asmedigitalcollection.asme.org/computingengineering/article/19/2/021011/422079/Multicomponent-Topology-Optimization-for-Additive"></attvalue>
+        </attvalues>
+        <viz:size value="128.57143"></viz:size>
+        <viz:position x="1595.9907" y="665.1843"></viz:position>
+        <viz:color r="249" g="119" b="67"></viz:color>
+      </node>
+      <node id="Pores">
+        <attvalues>
+          <attvalue for="indegree" value="3"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="4"></attvalue>
+          <attvalue for="weighted indegree" value="3.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="4.0"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3125"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.39000000000000007"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.773492554916704"></attvalue>
+          <attvalue for="authority" value="0.39372736"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+          <attvalue for="pageranks" value="0.015156647751328427"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="16"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.02085083291808444"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S135964541630088X?casa_token=SVYcxIQaxKsAAAAA:N5LNqNamYlu7sJw-kBOMYGGkT6zbPHRXJDur6WbYVluqxmlXbC67fRwGitjexopU-3Kc2qncpPc"></attvalue>
+          <attvalue for="reference2" value="https://www.sciencedirect.com/science/article/pii/S0928493115305002?casa_token=elNDWff5qhgAAAAA:whmCYLnH3YgZoADjhsl1-J53A-4agkR03vVB3VTot9863Ha8l4sHkAYkD0kSr4t9OuCtIChlvmk"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S1359646218300873?casa_token=ct3sIq7Qxi0AAAAA:kp3PR7LBOfSVcYzUAGmvWOODuvGqX400ZDsLMGiSXGGYB-ew1MtQo52VV5dPcY0w_KobMcbQCBY"></attvalue>
+        </attvalues>
+        <viz:size value="128.57143"></viz:size>
+        <viz:position x="1570.1191" y="964.4668"></viz:position>
+        <viz:color r="249" g="119" b="67"></viz:color>
+      </node>
+      <node id="Lack of Fusion">
+        <attvalues>
+          <attvalue for="indegree" value="3"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="4"></attvalue>
+          <attvalue for="weighted indegree" value="3.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="4.0"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3125"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.39000000000000007"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.773492554916704"></attvalue>
+          <attvalue for="authority" value="0.39372736"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+          <attvalue for="pageranks" value="0.015156647751328427"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="15"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.02085083291808444"></attvalue>
+          <attvalue for="reference1" value="https://www.nature.com/articles/srep19717"></attvalue>
+          <attvalue for="reference2" value="https://www.sciencedirect.com/science/article/pii/S1526612518302603?casa_token=JdcvBhmi_q0AAAAA:w02zqKUju4-IVtqeoIx7Y-CfU_PPGsCSdVBK-Dqx437fecNPx3x9UMBY6TO4FXedEd5oPCdsQTQ"></attvalue>
+          <attvalue for="reference3" value="https://link.springer.com/content/pdf/10.1007/s11837-016-2234-1.pdf"></attvalue>
+        </attvalues>
+        <viz:size value="128.57143"></viz:size>
+        <viz:position x="1503.7123" y="1246.4918"></viz:position>
+        <viz:color r="249" g="119" b="67"></viz:color>
+      </node>
+      <node id="Wavelength">
+        <attvalues>
+          <attvalue for="indegree" value="2"></attvalue>
+          <attvalue for="outdegree" value="2"></attvalue>
+          <attvalue for="degree" value="4"></attvalue>
+          <attvalue for="weighted indegree" value="2.0"></attvalue>
+          <attvalue for="weighted outdegree" value="2.0"></attvalue>
+          <attvalue for="weighted degree" value="4.0"></attvalue>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.6666666666666666"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="44.34158926728586"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+          <attvalue for="pageranks" value="0.07083372115073164"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="4"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.9623437941297176"></attvalue>
+        </attvalues>
+        <viz:size value="128.57143"></viz:size>
+        <viz:position x="-2792.1423" y="-237.51913"></viz:position>
+        <viz:color r="0" g="183" b="218"></viz:color>
+      </node>
+      <node id="Crack">
+        <attvalues>
+          <attvalue for="indegree" value="2"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="weighted indegree" value="2.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="3.0"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.2972972972972973"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.36969696969696975"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="authority" value="0.2878983"></attvalue>
+          <attvalue for="hub" value="0.0772512"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+          <attvalue for="pageranks" value="0.01331216533461643"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="11"></attvalue>
+          <attvalue for="clustering" value="0.3333333432674408"></attvalue>
+          <attvalue for="eigencentrality" value="0.01390055527872296"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S1350630716303752?casa_token=TwOr0rpD6CkAAAAA:KVgeUZrQQiKL4RzX0-xwrWndNg_3fOPzo1haLHPhIKOwtgmnofx62JO3oiuFEVyuvBDez_nuPfI"></attvalue>
+          <attvalue for="reference2" value="https://www.sciencedirect.com/science/article/pii/S2214860419305822?casa_token=b2DiITAlPoAAAAAA:-R7g-w2UNYlyoVT4IsPVEAF7hySEvrbgr-jPFL67PqDfRXf25aIFoKCK_j-5sJDzs1eTijt702g"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S0264127518307974"></attvalue>
+        </attvalues>
+        <viz:size value="114.28571"></viz:size>
+        <viz:position x="1580.4662" y="339.03903"></viz:position>
+        <viz:color r="249" g="119" b="67"></viz:color>
+      </node>
+      <node id="Cooling Rate">
+        <attvalues>
+          <attvalue for="indegree" value="1"></attvalue>
+          <attvalue for="outdegree" value="2"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="weighted indegree" value="1.0"></attvalue>
+          <attvalue for="weighted outdegree" value="2.0"></attvalue>
+          <attvalue for="weighted degree" value="3.0"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.5"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5833333333333334"></attvalue>
+          <attvalue for="betweenesscentrality" value="23.566268612708242"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+          <attvalue for="pageranks" value="0.023278546121303124"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="9"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.10446330559548209"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S0924013616300176?casa_token=wpe7bvJMQc8AAAAA:zwVudyjjcvEGpahWuPXHNqHwHZLWSx49nCzK_fsawmj8OBsQYgM-StIv-Wssb13M8aMbFrVJLCA"></attvalue>
+          <attvalue for="reference2" value="https://www.sciencedirect.com/science/article/pii/S1526612514000632?casa_token=7bwFgnDBNhcAAAAA:y2wrR2Swr4vrr_8WWSr8_GUPpI3mdMULo3vrTbEhvx01C-KnPjBmUDCVkYBKfVNbpMZXUQqhb1E"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S0030399219305468?casa_token=yAfMzqus4qYAAAAA:fv0pI_BHVrE12TITInxatAadHKe16cCkpI7gS3qHaiBbrItNZaO4B-8QVgQCRdE4YGctz5Cv3KI"></attvalue>
+        </attvalues>
+        <viz:size value="114.28571"></viz:size>
+        <viz:position x="52.511005" y="-157.97983"></viz:position>
+        <viz:color r="0" g="183" b="218"></viz:color>
+      </node>
+      <node id="Frame">
+        <attvalues>
+          <attvalue for="indegree" value="1"></attvalue>
+          <attvalue for="outdegree" value="2"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="weighted indegree" value="1.0"></attvalue>
+          <attvalue for="weighted outdegree" value="2.0"></attvalue>
+          <attvalue for="weighted degree" value="3.0"></attvalue>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="12.0"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+          <attvalue for="pageranks" value="0.02073575242238726"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="8"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.1172410656915214"></attvalue>
+        </attvalues>
+        <viz:size value="114.28571"></viz:size>
+        <viz:position x="-4229.282" y="-389.84283"></viz:position>
+        <viz:color r="0" g="183" b="218"></viz:color>
+      </node>
+      <node id="Radiation">
+        <attvalues>
+          <attvalue for="indegree" value="1"></attvalue>
+          <attvalue for="outdegree" value="2"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="weighted indegree" value="1.0"></attvalue>
+          <attvalue for="weighted outdegree" value="2.0"></attvalue>
+          <attvalue for="weighted degree" value="3.0"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.5"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.6111111111111112"></attvalue>
+          <attvalue for="betweenesscentrality" value="40.53611971104232"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+          <attvalue for="pageranks" value="0.055791796804666824"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="13"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.4623163688378812"></attvalue>
+        </attvalues>
+        <viz:size value="114.28571"></viz:size>
+        <viz:position x="-1189.3372" y="310.7362"></viz:position>
+        <viz:color r="0" g="183" b="218"></viz:color>
+      </node>
+      <node id="Electromagnetic spectrum of CCD/CMOS camera">
+        <attvalues>
+          <attvalue for="indegree" value="2"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="weighted indegree" value="2.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="3.0"></attvalue>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="15.0"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+          <attvalue for="pageranks" value="0.07025886035582364"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="3"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.875539941557532"></attvalue>
+        </attvalues>
+        <viz:size value="114.28571"></viz:size>
+        <viz:position x="-3646.0762" y="896.0196"></viz:position>
+        <viz:color r="0" g="183" b="218"></viz:color>
+      </node>
+      <node id="Electromagnetic spectrum of IR camera">
+        <attvalues>
+          <attvalue for="indegree" value="2"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="weighted indegree" value="2.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="3.0"></attvalue>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="15.0"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+          <attvalue for="pageranks" value="0.08096304871414653"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="1"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="1.0"></attvalue>
+        </attvalues>
+        <viz:size value="114.28571"></viz:size>
+        <viz:position x="-3679.7268" y="-1487.2338"></viz:position>
+        <viz:color r="0" g="183" b="218"></viz:color>
+      </node>
+      <node id="Powder Spatter">
+        <attvalues>
+          <attvalue for="indegree" value="1"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="weighted indegree" value="1.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="2.0"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3125"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.39000000000000007"></attvalue>
+          <attvalue for="betweenesscentrality" value="6.5"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+          <attvalue for="pageranks" value="0.017904326703862817"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="21"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.03833860236372204"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S135964541630088X?casa_token=TSYy2WOFmucAAAAA:GCk9u1S2GdMsU_42cpxTfc8_7zsnFdNTqHKgHyvOA3ViwK9tV9jcr01qgqEhDFTuO-sbNjakpi8"></attvalue>
+          <attvalue for="reference2" value="https://www.sciencedirect.com/science/article/pii/S1526612518303979?casa_token=0oXxCIuHH7MAAAAA:mcP5ibsD8avaTHubg7td0NcgIl3k29wXetknICOqixMUIOm4lzaebciGuUIc_7orapYFHYhPEag"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S1526612518313021?casa_token=Jh5f_l4CapAAAAAA:eD1WvpwDVnG-x7sLWZZHSC0eFPaLp-ovNxcLu0yDIQpyVmW_sogep_7sPkFfwmheRu-1rfmmeI8"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="1686.4623" y="-143.60138"></viz:position>
+        <viz:color r="154" g="150" b="229"></viz:color>
+      </node>
+      <node id="Balling">
+        <attvalues>
+          <attvalue for="indegree" value="1"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="weighted indegree" value="1.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="2.0"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3125"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.39000000000000007"></attvalue>
+          <attvalue for="betweenesscentrality" value="6.5"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+          <attvalue for="pageranks" value="0.017904326703862817"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="20"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.03833860236372204"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S0924013615000825?casa_token=zGD0LhBoJ7kAAAAA:ELKYtYwU3qyrAEStVUPP_cDsN9wAoM6CUbRl_-oykJVU8VdKOOZYwL5MEU6Z5_M1ZoUz8DAnNHM"></attvalue>
+          <attvalue for="reference2" value="https://www.sciencedirect.com/science/article/pii/S0925838806007122?casa_token=RgDSbdMKn-gAAAAA:laU3gI3CyokQ4vBcYYUBQVagUjVFH8Qi3KBM1EP8HCUs5D_GuHRurb4wnER8wE8cQOI_THf5IdY"></attvalue>
+          <attvalue for="reference3" value="https://www.liebertpub.com/doi/abs/10.1089/pho.2017.4311"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="1724.9553" y="-481.45822"></viz:position>
+        <viz:color r="154" g="150" b="229"></viz:color>
+      </node>
+      <node id="Thermal Distribution">
+        <attvalues>
+          <attvalue for="indegree" value="1"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="weighted indegree" value="1.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="2.0"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3684210526315789"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4523809523809524"></attvalue>
+          <attvalue for="betweenesscentrality" value="8.566268612708242"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+          <attvalue for="pageranks" value="0.023278546121303124"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="7"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.10446330559548209"></attvalue>
+          <attvalue for="reference1" value="https://www.sciencedirect.com/science/article/pii/S0017931017301928?casa_token=y8T2S2Et4nEAAAAA:eGnmoiYqkUjnvJzW_GaFs2EvHihho8oVwUklsbUdAL4C3g9EJ8FCJBmw_LrdjuSXmiP2zgMov3I"></attvalue>
+          <attvalue for="reference2" value="https://www.mdpi.com/2504-4494/2/3/63"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S129007291731027X?casa_token=9Gcaf-nWXHAAAAAA:5ZY_5mJs0DkbmlIEhSeipIy8fU7cxaGj3x1ef5Mjp38U0Nm4Sgm7C7e-W4th8gcgd6yugOgTvCA"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="53.844017" y="-1036.3778"></viz:position>
+        <viz:color r="40" g="179" b="106"></viz:color>
+      </node>
+      <node id="Photon energy">
+        <attvalues>
+          <attvalue for="indegree" value="1"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="weighted indegree" value="1.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="2.0"></attvalue>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.6666666666666666"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="8.254901960784315"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+          <attvalue for="pageranks" value="0.03453420669919208"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="12"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.3844994215712372"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-2268.548" y="541.87244"></viz:position>
+        <viz:color r="0" g="183" b="218"></viz:color>
+      </node>
+      <node id="CCD/CMOS camera">
+        <attvalues>
+          <attvalue for="indegree" value="2"></attvalue>
+          <attvalue for="outdegree" value="0"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="weighted indegree" value="2.0"></attvalue>
+          <attvalue for="weighted outdegree" value="0.0"></attvalue>
+          <attvalue for="weighted degree" value="2.0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+          <attvalue for="pageranks" value="0.07937038389367583"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="2"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.590217058551908"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-5000.0" y="403.4234"></viz:position>
+        <viz:color r="0" g="183" b="218"></viz:color>
+      </node>
+      <node id="Infrared energy">
+        <attvalues>
+          <attvalue for="indegree" value="1"></attvalue>
+          <attvalue for="outdegree" value="1"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="weighted indegree" value="1.0"></attvalue>
+          <attvalue for="weighted outdegree" value="1.0"></attvalue>
+          <attvalue for="weighted degree" value="2.0"></attvalue>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.6666666666666666"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="11.403508771929824"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+          <attvalue for="pageranks" value="0.04714139083520244"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="5"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.5778443725584812"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-2291.2637" y="-1311.5288"></viz:position>
+        <viz:color r="0" g="183" b="218"></viz:color>
+      </node>
+      <node id="IR camera">
+        <attvalues>
+          <attvalue for="indegree" value="2"></attvalue>
+          <attvalue for="outdegree" value="0"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="weighted indegree" value="2.0"></attvalue>
+          <attvalue for="weighted outdegree" value="0.0"></attvalue>
+          <attvalue for="weighted degree" value="2.0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+          <attvalue for="pageranks" value="0.08846156192907957"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="0"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.6548057459485479"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-4920.015" y="-1144.669"></viz:position>
+        <viz:color r="0" g="183" b="218"></viz:color>
+      </node>
+      <node id="Geometric Dimension">
+        <attvalues>
+          <attvalue for="indegree" value="0"></attvalue>
+          <attvalue for="outdegree" value="2"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="weighted indegree" value="0.0"></attvalue>
+          <attvalue for="weighted outdegree" value="2.0"></attvalue>
+          <attvalue for="weighted degree" value="2.0"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3148148148148148"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.40294117647058825"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="authority" value="0.0"></attvalue>
+          <attvalue for="hub" value="0.11807118"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+          <attvalue for="pageranks" value="0.010841876383662866"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="25"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="reference1" value="https://link.springer.com/article/10.1007/s00170-017-0570-0"></attvalue>
+          <attvalue for="reference2" value="https://journals.sagepub.com/doi/abs/10.3184/003685012X13420984463047"></attvalue>
+          <attvalue for="reference3" value="https://www.sciencedirect.com/science/article/pii/S2214657116300260"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="3539.4539" y="-1174.8768"></viz:position>
+        <viz:color r="40" g="179" b="106"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Fatigue" target="Surface roughness" weight="30.0"></edge>
+      <edge id="1" source="Fatigue" target="Void" weight="30.0"></edge>
+      <edge id="2" source="Fatigue" target="Keyhole" weight="30.0"></edge>
+      <edge id="3" source="Fatigue" target="Cavity" weight="30.0"></edge>
+      <edge id="4" source="Fatigue" target="Pores" weight="30.0"></edge>
+      <edge id="5" source="Fatigue" target="Lack of Fusion" weight="30.0"></edge>
+      <edge id="6" source="Fatigue" target="Thermal Distortion" weight="30.0"></edge>
+      <edge id="7" source="Fatigue" target="Crack" weight="30.0"></edge>
+      <edge id="8" source="Surface roughness" target="Powder Spatter" weight="30.0"></edge>
+      <edge id="9" source="Surface roughness" target="Balling" weight="30.0"></edge>
+      <edge id="10" source="Crack" target="Thermal Distortion" weight="30.0"></edge>
+      <edge id="11" source="Void" target="Melt Pool Size" weight="30.0"></edge>
+      <edge id="12" source="Keyhole" target="Melt Pool Size" weight="30.0"></edge>
+      <edge id="13" source="Powder Spatter" target="Melt Pool Size" weight="30.0"></edge>
+      <edge id="14" source="Balling" target="Melt Pool Size" weight="30.0"></edge>
+      <edge id="15" source="Cavity" target="Melt Pool Size" weight="30.0"></edge>
+      <edge id="16" source="Pores" target="Melt Pool Size" weight="30.0"></edge>
+      <edge id="17" source="Lack of Fusion" target="Melt Pool Size" weight="30.0"></edge>
+      <edge id="18" source="Thermal Distortion" target="Cooling Rate" weight="30.0"></edge>
+      <edge id="19" source="Thermal Distortion" target="Thermal Distribution" weight="30.0"></edge>
+      <edge id="20" source="Cooling Rate" target="Frame" weight="30.0"></edge>
+      <edge id="21" source="Cooling Rate" target="Thermal radiation" weight="30.0"></edge>
+      <edge id="22" source="Thermal Distribution" target="Thermal radiation" weight="30.0"></edge>
+      <edge id="23" source="Melt Pool Size" target="Radiation" weight="30.0"></edge>
+      <edge id="24" source="Radiation" target="Photon energy" weight="30.0"></edge>
+      <edge id="25" source="Radiation" target="Wavelength" weight="30.0"></edge>
+      <edge id="26" source="Photon energy" target="Electromagnetic spectrum of CCD/CMOS camera" weight="30.0"></edge>
+      <edge id="27" source="Wavelength" target="Electromagnetic spectrum of CCD/CMOS camera" weight="30.0"></edge>
+      <edge id="28" source="Electromagnetic spectrum of CCD/CMOS camera" target="CCD/CMOS camera" weight="30.0"></edge>
+      <edge id="29" source="Melt Pool Size" target="Thermal radiation" weight="30.0"></edge>
+      <edge id="30" source="Thermal radiation" target="Infrared energy" weight="30.0"></edge>
+      <edge id="31" source="Thermal radiation" target="Wavelength" weight="30.0"></edge>
+      <edge id="32" source="Infrared energy" target="Electromagnetic spectrum of IR camera" weight="30.0"></edge>
+      <edge id="33" source="Wavelength" target="Electromagnetic spectrum of IR camera" weight="30.0"></edge>
+      <edge id="34" source="Electromagnetic spectrum of IR camera" target="IR camera" weight="30.0"></edge>
+      <edge id="35" source="Frame" target="IR camera" weight="30.0"></edge>
+      <edge id="36" source="Frame" target="CCD/CMOS camera" weight="30.0"></edge>
+      <edge id="37" source="Density" target="Void" weight="30.0"></edge>
+      <edge id="38" source="Density" target="Keyhole" weight="30.0"></edge>
+      <edge id="39" source="Density" target="Cavity" weight="30.0"></edge>
+      <edge id="40" source="Density" target="Pores" weight="30.0"></edge>
+      <edge id="41" source="Density" target="Lack of Fusion" weight="30.0"></edge>
+      <edge id="59" source="Geometric Dimension" target="Surface roughness" weight="30.0"></edge>
+      <edge id="60" source="Geometric Dimension" target="Thermal Distortion" weight="30.0"></edge>
+      <edge id="84" source="Tensile Strength" target="Void" weight="30.0"></edge>
+      <edge id="85" source="Tensile Strength" target="Keyhole" weight="30.0"></edge>
+      <edge id="86" source="Tensile Strength" target="Lack of Fusion" weight="30.0"></edge>
+      <edge id="87" source="Tensile Strength" target="Pores" weight="30.0"></edge>
+      <edge id="88" source="Tensile Strength" target="Cavity" weight="30.0"></edge>
+      <edge id="89" source="Tensile Strength" target="Thermal Distortion" weight="30.0"></edge>
+      <edge id="90" source="Tensile Strength" target="Crack" weight="30.0"></edge>
+    </edges>
+  </graph>
+</gexf>
